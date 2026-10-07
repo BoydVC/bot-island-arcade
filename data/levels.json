@@ -1,0 +1,3289 @@
+{
+ "app": "Bot Island Arcade",
+ "builtAt": "2026-10-07T23:07:26.183157Z",
+ "fleetGeneratedAt": "2026-10-07T19:55:50.003750Z",
+ "fleetFile": "/workspace/tokenmax/bot-island/data/fleet.json",
+ "palette": {
+  "blue": "#3b82f6",
+  "red": "#ef4444",
+  "green": "#22c55e",
+  "yellow": "#eab308",
+  "gray": "#94a3b8",
+  "orange": "#f97316",
+  "cyan": "#06b6d4",
+  "violet": "#8b5cf6",
+  "magenta": "#d946ef",
+  "purple": "#8b5cf6",
+  "pink": "#ec4899",
+  "teal": "#14b8a6"
+ },
+ "buildings": {
+  "hq": {
+   "x": 600.0,
+   "y": 236.0,
+   "name": "Chief of Staff HQ",
+   "emoji": "🏛️",
+   "decor": false
+  },
+  "library": {
+   "x": 420.0,
+   "y": 290.0,
+   "name": "Research Library",
+   "emoji": "📚",
+   "decor": false
+  },
+  "observatory": {
+   "x": 300.0,
+   "y": 205.0,
+   "name": "Trend Observatory",
+   "emoji": "🔭",
+   "decor": false
+  },
+  "bank": {
+   "x": 790.0,
+   "y": 292.0,
+   "name": "Island Bank",
+   "emoji": "🏦",
+   "decor": false
+  },
+  "clubhouse": {
+   "x": 860.0,
+   "y": 438.0,
+   "name": "Family Clubhouse",
+   "emoji": "🏡",
+   "decor": false
+  },
+  "school": {
+   "x": 330.0,
+   "y": 432.0,
+   "name": "Schoolhouse",
+   "emoji": "🏫",
+   "decor": false
+  },
+  "press": {
+   "x": 470.0,
+   "y": 560.0,
+   "name": "Family Times Press",
+   "emoji": "📰",
+   "decor": false
+  },
+  "radio": {
+   "x": 735.0,
+   "y": 562.0,
+   "name": "Pods Radio Tower",
+   "emoji": "📻",
+   "decor": false
+  },
+  "postoffice": {
+   "x": 600.0,
+   "y": 600.0,
+   "name": "Morning Post Office",
+   "emoji": "📮",
+   "decor": false
+  },
+  "workshop": {
+   "x": 965.0,
+   "y": 318.0,
+   "name": "Dwight's Workshop",
+   "emoji": "🛠️",
+   "decor": false
+  },
+  "hatchery": {
+   "x": 205.0,
+   "y": 330.0,
+   "name": "EggBot Hatchery",
+   "emoji": "🥚",
+   "decor": false
+  },
+  "lighthouse": {
+   "x": 1058.0,
+   "y": 470.0,
+   "name": "Idea Lighthouse",
+   "emoji": "💡",
+   "decor": false
+  },
+  "launchpad": {
+   "x": 905.0,
+   "y": 168.0,
+   "name": "TokenMax Launch Pad",
+   "emoji": "🚀",
+   "decor": false
+  },
+  "stadium": {
+   "x": 190.0,
+   "y": 540.0,
+   "name": "Purple Stadium",
+   "emoji": "🏟️",
+   "decor": true
+  },
+  "commons": {
+   "x": 600.0,
+   "y": 420.0,
+   "name": "Town Square",
+   "emoji": "⛲",
+   "decor": false
+  },
+  "boyd": {
+   "x": 712.0,
+   "y": 352.0,
+   "name": "Boyd's Place",
+   "emoji": "🏠",
+   "decor": true
+  }
+ },
+ "bots": [
+  {
+   "id": "3e3aaa23-1281-43d0-9cac-e38e22ba5be0",
+   "name": "Kelly",
+   "title": "Trends",
+   "color": "yellow",
+   "hex": "#eab308",
+   "shape": "pebble",
+   "building": "observatory",
+   "emoji": "🤖"
+  },
+  {
+   "id": "4b4afba1-ebe0-403c-8502-451e00717b07",
+   "name": "Boyd Family Times (archive)",
+   "title": "Morning Newspaper",
+   "color": "gray",
+   "hex": "#94a3b8",
+   "shape": "squircle",
+   "building": "press",
+   "emoji": "🗞️"
+  },
+  {
+   "id": "4feb1fc5-075b-4294-a694-3fa562e5785b",
+   "name": "Michael",
+   "title": "Chief of Staff",
+   "color": "red",
+   "hex": "#ef4444",
+   "shape": "blob",
+   "building": "hq",
+   "emoji": "🧭"
+  },
+  {
+   "id": "5ea76ec0-2e44-46be-993a-11bc6ba30958",
+   "name": "Oscar",
+   "title": "Finances",
+   "color": "green",
+   "hex": "#22c55e",
+   "shape": "squircle",
+   "building": "bank",
+   "emoji": "🤖"
+  },
+  {
+   "id": "6a33ea82-5497-43fa-a644-aebed89a6bf6",
+   "name": "Ryan",
+   "title": "Entrepreneur",
+   "color": "red",
+   "hex": "#ef4444",
+   "shape": "squircle",
+   "building": "lighthouse",
+   "emoji": "🤖"
+  },
+  {
+   "id": "759c205a-40a5-4e74-9620-3c04714824f4",
+   "name": "Dr. EggBot",
+   "title": "Bot Creator",
+   "color": "red",
+   "hex": "#ef4444",
+   "shape": "teardrop",
+   "building": "hatchery",
+   "emoji": "🥚"
+  },
+  {
+   "id": "784bedfc-74d6-45a0-a291-762ff05bb0c6",
+   "name": "Boyd Family Times",
+   "title": "",
+   "color": "gray",
+   "hex": "#94a3b8",
+   "shape": "circle",
+   "building": "press",
+   "emoji": "📰"
+  },
+  {
+   "id": "7e4990fe-38aa-4d6d-aa6b-c87baad5f8d1",
+   "name": "Vic Tutor",
+   "title": "6th Grade Tutor",
+   "color": "orange",
+   "hex": "#f97316",
+   "shape": "cloud",
+   "building": "school",
+   "emoji": "📐"
+  },
+  {
+   "id": "84ee99ac-e314-4642-a27b-89b81a591547",
+   "name": "Brief",
+   "title": "Morning Brief",
+   "color": "blue",
+   "hex": "#3b82f6",
+   "shape": "wedge",
+   "building": "postoffice",
+   "emoji": "🤖"
+  },
+  {
+   "id": "9abbfaf4-f401-4e70-8619-da598173399a",
+   "name": "Jim",
+   "title": "Interests",
+   "color": "blue",
+   "hex": "#3b82f6",
+   "shape": "hex",
+   "building": "library",
+   "emoji": "🤖"
+  },
+  {
+   "id": "b56dd939-08e7-4c0a-82af-140a51de11b4",
+   "name": "TokenMax",
+   "title": "",
+   "color": "magenta",
+   "hex": "#d946ef",
+   "shape": "sparkle",
+   "building": "launchpad",
+   "emoji": "🤖"
+  },
+  {
+   "id": "d0afda46-7287-40c1-b934-70ab9225584e",
+   "name": "Dwight",
+   "title": "Code Monkey",
+   "color": "yellow",
+   "hex": "#eab308",
+   "shape": "teardrop",
+   "building": "workshop",
+   "emoji": "🤖"
+  },
+  {
+   "id": "e1bfeb52-89c2-48fa-b6dd-b4dcf9ed54e1",
+   "name": "Pam",
+   "title": "Family Logistics",
+   "color": "cyan",
+   "hex": "#06b6d4",
+   "shape": "tablet",
+   "building": "clubhouse",
+   "emoji": "🤖"
+  },
+  {
+   "id": "ed1121b7-dd17-4061-880f-70ebed7c8250",
+   "name": "Pods",
+   "title": "",
+   "color": "gray",
+   "hex": "#94a3b8",
+   "shape": "circle",
+   "building": "radio",
+   "emoji": "🤖"
+  },
+  {
+   "id": "fd400f67-24e0-40fd-9d9f-fcdcb2969805",
+   "name": "Path",
+   "title": "High School Path",
+   "color": "gray",
+   "hex": "#94a3b8",
+   "shape": "circle",
+   "building": "school",
+   "emoji": "🤖"
+  },
+  {
+   "id": "ff5dfcd2-09b9-49dd-952f-14893da73ab0",
+   "name": "Char Tutor",
+   "title": "8th Grade Tutor",
+   "color": "violet",
+   "hex": "#8b5cf6",
+   "shape": "cloud",
+   "building": "school",
+   "emoji": "✏️"
+  }
+ ],
+ "eggs": [
+  {
+   "id": "d26b92da-570a-4d65-bd17-86efa401a125",
+   "name": "New Bot"
+  }
+ ],
+ "levels": [
+  {
+   "day": "2026-10-07",
+   "title": "Wednesday, Oct 7",
+   "short": "Wed Oct 7",
+   "jobs": [
+    {
+     "kind": "output",
+     "label": "New files: .json ×2, .ttf, .jpg, .py, .png",
+     "from": "Boyd Family Times",
+     "to": null,
+     "fromB": "press",
+     "toB": null,
+     "srcType": "file_write",
+     "exts": [
+      ".ttf",
+      ".json",
+      ".jpg",
+      ".py",
+      ".png",
+      ".json"
+     ],
+     "srcTs": [
+      "2026-10-07T09:22:04.131862Z",
+      "2026-10-07T09:23:47.571648Z",
+      "2026-10-07T09:25:13.899472Z",
+      "2026-10-07T09:28:36.559066Z",
+      "2026-10-07T09:29:21.094980Z",
+      "2026-10-07T09:31:21.906908Z"
+     ],
+     "count": 6,
+     "ts": "2026-10-07T09:22:04.131862Z",
+     "id": "2026-10-07#0"
+    },
+    {
+     "kind": "output",
+     "label": "New files: .vtt ×2, .xml",
+     "from": "Pods",
+     "to": null,
+     "fromB": "radio",
+     "toB": null,
+     "srcType": "file_write",
+     "exts": [
+      ".xml",
+      ".vtt",
+      ".vtt"
+     ],
+     "srcTs": [
+      "2026-10-07T10:48:43.375187Z",
+      "2026-10-07T10:49:30.274981Z",
+      "2026-10-07T10:50:26.738748Z"
+     ],
+     "count": 3,
+     "ts": "2026-10-07T10:48:43.375187Z",
+     "id": "2026-10-07#1"
+    },
+    {
+     "kind": "output",
+     "label": "New files: .html",
+     "from": "Path",
+     "to": null,
+     "fromB": "school",
+     "toB": null,
+     "srcType": "file_write",
+     "exts": [
+      ".html"
+     ],
+     "srcTs": [
+      "2026-10-07T10:50:02.414846Z"
+     ],
+     "count": 1,
+     "ts": "2026-10-07T10:50:02.414846Z",
+     "id": "2026-10-07#2"
+    },
+    {
+     "kind": "output",
+     "label": "New files: .png ×3, .py ×2, .json ×2, .sh, .md, .mjs, .css, .mp4",
+     "from": "TokenMax",
+     "to": null,
+     "fromB": "launchpad",
+     "toB": null,
+     "srcType": "file_write",
+     "exts": [
+      ".sh",
+      ".py",
+      ".md",
+      ".png",
+      ".mjs",
+      ".css",
+      ".py",
+      ".png",
+      ".mp4",
+      ".png",
+      ".json",
+      ".json"
+     ],
+     "srcTs": [
+      "2026-10-07T19:33:03.796312Z",
+      "2026-10-07T19:35:31.784694Z",
+      "2026-10-07T19:36:37.308728Z",
+      "2026-10-07T19:42:35.387899Z",
+      "2026-10-07T19:43:56.391539Z",
+      "2026-10-07T19:44:43.579309Z",
+      "2026-10-07T19:45:30.075068Z",
+      "2026-10-07T19:46:13.334833Z",
+      "2026-10-07T19:50:54.705101Z",
+      "2026-10-07T19:51:42.172781Z",
+      "2026-10-07T19:54:54.104890Z",
+      "2026-10-07T19:55:19.065486Z"
+     ],
+     "count": 12,
+     "ts": "2026-10-07T19:33:03.796312Z",
+     "id": "2026-10-07#3"
+    }
+   ],
+   "counts": {
+    "output": 4
+   },
+   "cast": [
+    "Boyd Family Times",
+    "Path",
+    "Pods",
+    "TokenMax"
+   ],
+   "topPair": null,
+   "firstTs": "2026-10-07T09:22:04.131862Z",
+   "lastTs": "2026-10-07T19:33:03.796312Z"
+  },
+  {
+   "day": "2026-09-14",
+   "title": "Monday, Sep 14",
+   "short": "Mon Sep 14",
+   "jobs": [
+    {
+     "kind": "routine",
+     "label": "Morning Boyd Family Times",
+     "from": "Boyd Family Times (archive)",
+     "to": null,
+     "fromB": "press",
+     "toB": null,
+     "srcType": "routine_run",
+     "srcTs": [
+      "2026-09-14T09:13:24.033000Z"
+     ],
+     "count": 1,
+     "ts": "2026-09-14T09:13:24.033000Z",
+     "status": "ok",
+     "id": "2026-09-14#0"
+    },
+    {
+     "kind": "output",
+     "label": "Family Times edition",
+     "from": "Boyd Family Times",
+     "to": null,
+     "fromB": "press",
+     "toB": null,
+     "srcType": "dated_output",
+     "srcTs": [
+      "2026-09-14T09:16:00Z"
+     ],
+     "count": 1,
+     "ts": "2026-09-14T09:16:00Z",
+     "id": "2026-09-14#1"
+    },
+    {
+     "kind": "routine",
+     "label": "routine-healthcheck",
+     "from": "Dr. EggBot",
+     "to": null,
+     "fromB": "hatchery",
+     "toB": null,
+     "srcType": "routine_run",
+     "srcTs": [
+      "2026-09-14T10:39:25.234000Z"
+     ],
+     "count": 1,
+     "ts": "2026-09-14T10:39:25.234000Z",
+     "status": "ok",
+     "id": "2026-09-14#2"
+    },
+    {
+     "kind": "routine",
+     "label": "transcript-healthcheck",
+     "from": "Dr. EggBot",
+     "to": null,
+     "fromB": "hatchery",
+     "toB": null,
+     "srcType": "routine_run",
+     "srcTs": [
+      "2026-09-14T10:42:55.209000Z"
+     ],
+     "count": 1,
+     "ts": "2026-09-14T10:42:55.209000Z",
+     "status": "ok",
+     "id": "2026-09-14#3"
+    },
+    {
+     "kind": "routine",
+     "label": "Daily podcast listen brief",
+     "from": "Jim",
+     "to": null,
+     "fromB": "library",
+     "toB": null,
+     "srcType": "routine_run",
+     "srcTs": [
+      "2026-09-14T11:02:25.502000Z"
+     ],
+     "count": 1,
+     "ts": "2026-09-14T11:02:25.502000Z",
+     "status": "ok",
+     "id": "2026-09-14#4"
+    },
+    {
+     "kind": "routine",
+     "label": "Weekly idea digest",
+     "from": "Ryan",
+     "to": null,
+     "fromB": "lighthouse",
+     "toB": null,
+     "srcType": "routine_run",
+     "srcTs": [
+      "2026-09-14T11:07:55.841000Z"
+     ],
+     "count": 1,
+     "ts": "2026-09-14T11:07:55.841000Z",
+     "status": "ok",
+     "id": "2026-09-14#5"
+    },
+    {
+     "kind": "routine",
+     "label": "Weekday family calendar scan",
+     "from": "Pam",
+     "to": null,
+     "fromB": "clubhouse",
+     "toB": null,
+     "srcType": "routine_run",
+     "srcTs": [
+      "2026-09-14T11:49:11.994000Z"
+     ],
+     "count": 1,
+     "ts": "2026-09-14T11:49:11.994000Z",
+     "status": "ok",
+     "id": "2026-09-14#6"
+    },
+    {
+     "kind": "msg",
+     "label": "Message",
+     "from": "Pam",
+     "to": "Michael",
+     "fromB": "clubhouse",
+     "toB": "hq",
+     "srcType": "agent_msg",
+     "srcTs": [
+      "2026-09-14T11:52:28.314000Z"
+     ],
+     "count": 1,
+     "ts": "2026-09-14T11:52:28.314000Z",
+     "id": "2026-09-14#7"
+    },
+    {
+     "kind": "routine",
+     "label": "Morning attention brief",
+     "from": "Brief",
+     "to": null,
+     "fromB": "postoffice",
+     "toB": null,
+     "srcType": "routine_run",
+     "srcTs": [
+      "2026-09-14T12:43:12.947000Z"
+     ],
+     "count": 1,
+     "ts": "2026-09-14T12:43:12.947000Z",
+     "status": "ok",
+     "id": "2026-09-14#8"
+    },
+    {
+     "kind": "msg",
+     "label": "Message",
+     "from": "Oscar",
+     "to": "Michael",
+     "fromB": "bank",
+     "toB": "hq",
+     "srcType": "agent_msg",
+     "srcTs": [
+      "2026-09-14T12:44:31.748000Z"
+     ],
+     "count": 1,
+     "ts": "2026-09-14T12:44:31.748000Z",
+     "id": "2026-09-14#9"
+    },
+    {
+     "kind": "msg",
+     "label": "Message",
+     "from": "Oscar",
+     "to": "Michael",
+     "fromB": "bank",
+     "toB": "hq",
+     "srcType": "agent_msg",
+     "srcTs": [
+      "2026-09-14T13:00:10.136000Z"
+     ],
+     "count": 1,
+     "ts": "2026-09-14T13:00:10.136000Z",
+     "id": "2026-09-14#10"
+    },
+    {
+     "kind": "boyd",
+     "label": "Message from Boyd",
+     "from": "Boyd",
+     "to": "Dr. EggBot",
+     "fromB": "boyd",
+     "toB": "hatchery",
+     "srcType": "boyd_msg",
+     "srcTs": [
+      "2026-09-14T17:26:18.878000Z"
+     ],
+     "count": 1,
+     "ts": "2026-09-14T17:26:18.878000Z",
+     "id": "2026-09-14#11"
+    },
+    {
+     "kind": "msg",
+     "label": "Message",
+     "from": "Dr. EggBot",
+     "to": "Boyd Family Times (archive)",
+     "fromB": "hatchery",
+     "toB": "press",
+     "srcType": "agent_msg",
+     "srcTs": [
+      "2026-09-14T17:26:52.175000Z"
+     ],
+     "count": 1,
+     "ts": "2026-09-14T17:26:52.175000Z",
+     "id": "2026-09-14#12"
+    },
+    {
+     "kind": "msg",
+     "label": "Message",
+     "from": "Boyd Family Times (archive)",
+     "to": "Dr. EggBot",
+     "fromB": "press",
+     "toB": "hatchery",
+     "srcType": "agent_msg",
+     "srcTs": [
+      "2026-09-14T17:27:45.316000Z"
+     ],
+     "count": 1,
+     "ts": "2026-09-14T17:27:45.316000Z",
+     "id": "2026-09-14#13"
+    },
+    {
+     "kind": "boyd",
+     "label": "Message from Boyd",
+     "from": "Boyd",
+     "to": "Char Tutor",
+     "fromB": "boyd",
+     "toB": "school",
+     "srcType": "boyd_msg",
+     "srcTs": [
+      "2026-09-14T19:33:28.302000Z"
+     ],
+     "count": 1,
+     "ts": "2026-09-14T19:33:28.302000Z",
+     "id": "2026-09-14#14"
+    },
+    {
+     "kind": "msg",
+     "label": "Message",
+     "from": "Vic Tutor",
+     "to": "Michael",
+     "fromB": "school",
+     "toB": "hq",
+     "srcType": "agent_msg",
+     "srcTs": [
+      "2026-09-14T19:35:55.085000Z"
+     ],
+     "count": 1,
+     "ts": "2026-09-14T19:35:55.085000Z",
+     "id": "2026-09-14#15"
+    },
+    {
+     "kind": "boyd",
+     "label": "Message from Boyd",
+     "from": "Boyd",
+     "to": "Vic Tutor",
+     "fromB": "boyd",
+     "toB": "school",
+     "srcType": "boyd_msg",
+     "srcTs": [
+      "2026-09-14T20:55:56.072000Z",
+      "2026-09-14T20:57:15.156000Z"
+     ],
+     "count": 2,
+     "ts": "2026-09-14T20:55:56.072000Z",
+     "id": "2026-09-14#16"
+    },
+    {
+     "kind": "routine",
+     "label": "Char weeknight homework check-in",
+     "from": "Char Tutor",
+     "to": null,
+     "fromB": "school",
+     "toB": null,
+     "srcType": "routine_run",
+     "srcTs": [
+      "2026-09-14T23:14:55.936000Z"
+     ],
+     "count": 1,
+     "ts": "2026-09-14T23:14:55.936000Z",
+     "status": "ok",
+     "id": "2026-09-14#17"
+    },
+    {
+     "kind": "routine",
+     "label": "Vic weeknight homework check-in",
+     "from": "Vic Tutor",
+     "to": null,
+     "fromB": "school",
+     "toB": null,
+     "srcType": "routine_run",
+     "srcTs": [
+      "2026-09-14T23:38:26.153000Z"
+     ],
+     "count": 1,
+     "ts": "2026-09-14T23:38:26.153000Z",
+     "status": "ok",
+     "id": "2026-09-14#18"
+    },
+    {
+     "kind": "routine",
+     "label": "Jim daily interest note",
+     "from": "Jim",
+     "to": null,
+     "fromB": "library",
+     "toB": null,
+     "srcType": "routine_run",
+     "srcTs": [
+      "2026-09-15T00:12:57.091000Z"
+     ],
+     "count": 1,
+     "ts": "2026-09-15T00:12:57.091000Z",
+     "status": "ok",
+     "id": "2026-09-14#19"
+    }
+   ],
+   "counts": {
+    "routine": 10,
+    "output": 1,
+    "msg": 6,
+    "boyd": 3
+   },
+   "cast": [
+    "Boyd Family Times",
+    "Boyd Family Times (archive)",
+    "Brief",
+    "Char Tutor",
+    "Dr. EggBot",
+    "Jim",
+    "Michael",
+    "Oscar",
+    "Pam",
+    "Ryan",
+    "Vic Tutor"
+   ],
+   "topPair": "Michael ↔ Oscar",
+   "firstTs": "2026-09-14T09:13:24.033000Z",
+   "lastTs": "2026-09-15T00:12:57.091000Z"
+  },
+  {
+   "day": "2026-09-10",
+   "title": "Thursday, Sep 10",
+   "short": "Thu Sep 10",
+   "jobs": [
+    {
+     "kind": "routine",
+     "label": "Morning Boyd Family Times",
+     "from": "Boyd Family Times (archive)",
+     "to": null,
+     "fromB": "press",
+     "toB": null,
+     "srcType": "routine_run",
+     "srcTs": [
+      "2026-09-10T09:07:22.638000Z"
+     ],
+     "count": 1,
+     "ts": "2026-09-10T09:07:22.638000Z",
+     "status": "ok",
+     "id": "2026-09-10#0"
+    },
+    {
+     "kind": "routine",
+     "label": "transcript-healthcheck",
+     "from": "Dr. EggBot",
+     "to": null,
+     "fromB": "hatchery",
+     "toB": null,
+     "srcType": "routine_run",
+     "srcTs": [
+      "2026-09-10T10:34:54.291000Z"
+     ],
+     "count": 1,
+     "ts": "2026-09-10T10:34:54.291000Z",
+     "status": "ok",
+     "id": "2026-09-10#1"
+    },
+    {
+     "kind": "routine",
+     "label": "Daily podcast listen brief",
+     "from": "Jim",
+     "to": null,
+     "fromB": "library",
+     "toB": null,
+     "srcType": "routine_run",
+     "srcTs": [
+      "2026-09-10T11:05:25.066000Z"
+     ],
+     "count": 1,
+     "ts": "2026-09-10T11:05:25.066000Z",
+     "status": "ok",
+     "id": "2026-09-10#2"
+    },
+    {
+     "kind": "routine",
+     "label": "Weekday family calendar scan",
+     "from": "Pam",
+     "to": null,
+     "fromB": "clubhouse",
+     "toB": null,
+     "srcType": "routine_run",
+     "srcTs": [
+      "2026-09-10T11:40:10.603000Z"
+     ],
+     "count": 1,
+     "ts": "2026-09-10T11:40:10.603000Z",
+     "status": "ok",
+     "id": "2026-09-10#3"
+    },
+    {
+     "kind": "msg",
+     "label": "Message",
+     "from": "Pam",
+     "to": "Michael",
+     "fromB": "clubhouse",
+     "toB": "hq",
+     "srcType": "agent_msg",
+     "srcTs": [
+      "2026-09-10T11:50:25.929000Z"
+     ],
+     "count": 1,
+     "ts": "2026-09-10T11:50:25.929000Z",
+     "id": "2026-09-10#4"
+    },
+    {
+     "kind": "routine",
+     "label": "Morning attention brief",
+     "from": "Brief",
+     "to": null,
+     "fromB": "postoffice",
+     "toB": null,
+     "srcType": "routine_run",
+     "srcTs": [
+      "2026-09-10T12:26:26.658000Z"
+     ],
+     "count": 1,
+     "ts": "2026-09-10T12:26:26.658000Z",
+     "status": "ok",
+     "id": "2026-09-10#5"
+    },
+    {
+     "kind": "boyd",
+     "label": "Message from Boyd",
+     "from": "Boyd",
+     "to": "Boyd Family Times (archive)",
+     "fromB": "boyd",
+     "toB": "press",
+     "srcType": "boyd_msg",
+     "srcTs": [
+      "2026-09-10T22:06:47.969000Z",
+      "2026-09-10T22:09:12.019000Z",
+      "2026-09-10T22:12:15.462000Z",
+      "2026-09-10T22:15:08.442000Z",
+      "2026-09-10T22:18:47.343000Z"
+     ],
+     "count": 5,
+     "ts": "2026-09-10T22:06:47.969000Z",
+     "id": "2026-09-10#6"
+    },
+    {
+     "kind": "boyd",
+     "label": "Message from Boyd",
+     "from": "Boyd",
+     "to": "Oscar",
+     "fromB": "boyd",
+     "toB": "bank",
+     "srcType": "boyd_msg",
+     "srcTs": [
+      "2026-09-10T22:10:16.999000Z"
+     ],
+     "count": 1,
+     "ts": "2026-09-10T22:10:16.999000Z",
+     "id": "2026-09-10#7"
+    },
+    {
+     "kind": "boyd",
+     "label": "Message from Boyd",
+     "from": "Boyd",
+     "to": "Michael",
+     "fromB": "boyd",
+     "toB": "hq",
+     "srcType": "boyd_msg",
+     "srcTs": [
+      "2026-09-10T22:26:29.094000Z"
+     ],
+     "count": 1,
+     "ts": "2026-09-10T22:26:29.094000Z",
+     "id": "2026-09-10#8"
+    },
+    {
+     "kind": "boyd",
+     "label": "Message from Boyd",
+     "from": "Boyd",
+     "to": "Boyd Family Times (archive)",
+     "fromB": "boyd",
+     "toB": "press",
+     "srcType": "boyd_msg",
+     "srcTs": [
+      "2026-09-10T22:29:10Z"
+     ],
+     "count": 1,
+     "ts": "2026-09-10T22:29:10Z",
+     "id": "2026-09-10#9"
+    },
+    {
+     "kind": "boyd",
+     "label": "Message from Boyd",
+     "from": "Boyd",
+     "to": "Dwight",
+     "fromB": "boyd",
+     "toB": "workshop",
+     "srcType": "boyd_msg",
+     "srcTs": [
+      "2026-09-10T22:31:52.625000Z",
+      "2026-09-10T22:36:17.054000Z"
+     ],
+     "count": 2,
+     "ts": "2026-09-10T22:31:52.625000Z",
+     "id": "2026-09-10#10"
+    },
+    {
+     "kind": "routine",
+     "label": "Vic weeknight homework check-in",
+     "from": "Vic Tutor",
+     "to": null,
+     "fromB": "school",
+     "toB": null,
+     "srcType": "routine_run",
+     "srcTs": [
+      "2026-09-10T23:25:07.645000Z"
+     ],
+     "count": 1,
+     "ts": "2026-09-10T23:25:07.645000Z",
+     "status": "ok",
+     "id": "2026-09-10#11"
+    },
+    {
+     "kind": "routine",
+     "label": "Char weeknight homework check-in",
+     "from": "Char Tutor",
+     "to": null,
+     "fromB": "school",
+     "toB": null,
+     "srcType": "routine_run",
+     "srcTs": [
+      "2026-09-10T23:44:22.919000Z"
+     ],
+     "count": 1,
+     "ts": "2026-09-10T23:44:22.919000Z",
+     "status": "ok",
+     "id": "2026-09-10#12"
+    },
+    {
+     "kind": "routine",
+     "label": "Jim daily interest note",
+     "from": "Jim",
+     "to": null,
+     "fromB": "library",
+     "toB": null,
+     "srcType": "routine_run",
+     "srcTs": [
+      "2026-09-11T00:11:38.385000Z"
+     ],
+     "count": 1,
+     "ts": "2026-09-11T00:11:38.385000Z",
+     "status": "ok",
+     "id": "2026-09-10#13"
+    },
+    {
+     "kind": "msg",
+     "label": "Message",
+     "from": "Vic Tutor",
+     "to": "Michael",
+     "fromB": "school",
+     "toB": "hq",
+     "srcType": "agent_msg",
+     "srcTs": [
+      "2026-09-11T02:42:55.585000Z"
+     ],
+     "count": 1,
+     "ts": "2026-09-11T02:42:55.585000Z",
+     "id": "2026-09-10#14"
+    }
+   ],
+   "counts": {
+    "routine": 8,
+    "msg": 2,
+    "boyd": 5
+   },
+   "cast": [
+    "Boyd Family Times (archive)",
+    "Brief",
+    "Char Tutor",
+    "Dr. EggBot",
+    "Dwight",
+    "Jim",
+    "Michael",
+    "Oscar",
+    "Pam",
+    "Vic Tutor"
+   ],
+   "topPair": "Michael ↔ Pam",
+   "firstTs": "2026-09-10T09:07:22.638000Z",
+   "lastTs": "2026-09-11T02:42:55.585000Z"
+  },
+  {
+   "day": "2026-09-11",
+   "title": "Friday, Sep 11",
+   "short": "Fri Sep 11",
+   "jobs": [
+    {
+     "kind": "routine",
+     "label": "Morning Boyd Family Times",
+     "from": "Boyd Family Times (archive)",
+     "to": null,
+     "fromB": "press",
+     "toB": null,
+     "srcType": "routine_run",
+     "srcTs": [
+      "2026-09-11T09:19:24.970000Z"
+     ],
+     "count": 1,
+     "ts": "2026-09-11T09:19:24.970000Z",
+     "status": "ok",
+     "id": "2026-09-11#0"
+    },
+    {
+     "kind": "routine",
+     "label": "transcript-healthcheck",
+     "from": "Dr. EggBot",
+     "to": null,
+     "fromB": "hatchery",
+     "toB": null,
+     "srcType": "routine_run",
+     "srcTs": [
+      "2026-09-11T10:31:43.105000Z"
+     ],
+     "count": 1,
+     "ts": "2026-09-11T10:31:43.105000Z",
+     "status": "ok",
+     "id": "2026-09-11#1"
+    },
+    {
+     "kind": "boyd",
+     "label": "Message from Boyd",
+     "from": "Boyd",
+     "to": "Boyd Family Times (archive)",
+     "fromB": "boyd",
+     "toB": "press",
+     "srcType": "boyd_msg",
+     "srcTs": [
+      "2026-09-11T11:06:15.403000Z"
+     ],
+     "count": 1,
+     "ts": "2026-09-11T11:06:15.403000Z",
+     "id": "2026-09-11#2"
+    },
+    {
+     "kind": "routine",
+     "label": "Daily podcast listen brief",
+     "from": "Jim",
+     "to": null,
+     "fromB": "library",
+     "toB": null,
+     "srcType": "routine_run",
+     "srcTs": [
+      "2026-09-11T11:17:29.532000Z"
+     ],
+     "count": 1,
+     "ts": "2026-09-11T11:17:29.532000Z",
+     "status": "ok",
+     "id": "2026-09-11#3"
+    },
+    {
+     "kind": "routine",
+     "label": "Weekday family calendar scan",
+     "from": "Pam",
+     "to": null,
+     "fromB": "clubhouse",
+     "toB": null,
+     "srcType": "routine_run",
+     "srcTs": [
+      "2026-09-11T11:55:16.074000Z"
+     ],
+     "count": 1,
+     "ts": "2026-09-11T11:55:16.074000Z",
+     "status": "ok",
+     "id": "2026-09-11#4"
+    },
+    {
+     "kind": "msg",
+     "label": "Message",
+     "from": "Pam",
+     "to": "Michael",
+     "fromB": "clubhouse",
+     "toB": "hq",
+     "srcType": "agent_msg",
+     "srcTs": [
+      "2026-09-11T11:58:17.363000Z"
+     ],
+     "count": 1,
+     "ts": "2026-09-11T11:58:17.363000Z",
+     "id": "2026-09-11#5"
+    },
+    {
+     "kind": "boyd",
+     "label": "Message from Boyd",
+     "from": "Boyd",
+     "to": "Michael",
+     "fromB": "boyd",
+     "toB": "hq",
+     "srcType": "boyd_msg",
+     "srcTs": [
+      "2026-09-11T17:08:06.023000Z",
+      "2026-09-11T17:11:22.566000Z"
+     ],
+     "count": 2,
+     "ts": "2026-09-11T17:08:06.023000Z",
+     "id": "2026-09-11#6"
+    },
+    {
+     "kind": "boyd",
+     "label": "Message from Boyd",
+     "from": "Boyd",
+     "to": "Jim",
+     "fromB": "boyd",
+     "toB": "library",
+     "srcType": "boyd_msg",
+     "srcTs": [
+      "2026-09-11T17:12:24.035000Z"
+     ],
+     "count": 1,
+     "ts": "2026-09-11T17:12:24.035000Z",
+     "id": "2026-09-11#7"
+    },
+    {
+     "kind": "msg",
+     "label": "Message",
+     "from": "Michael",
+     "to": "Pam",
+     "fromB": "hq",
+     "toB": "clubhouse",
+     "srcType": "agent_msg",
+     "srcTs": [
+      "2026-09-11T17:15:51.432000Z"
+     ],
+     "count": 1,
+     "ts": "2026-09-11T17:15:51.432000Z",
+     "id": "2026-09-11#8"
+    },
+    {
+     "kind": "msg",
+     "label": "Message",
+     "from": "Pam",
+     "to": "Michael",
+     "fromB": "clubhouse",
+     "toB": "hq",
+     "srcType": "agent_msg",
+     "srcTs": [
+      "2026-09-11T17:16:14.811000Z"
+     ],
+     "count": 1,
+     "ts": "2026-09-11T17:16:14.811000Z",
+     "id": "2026-09-11#9"
+    },
+    {
+     "kind": "msg",
+     "label": "Message",
+     "from": "Michael",
+     "to": "Char Tutor",
+     "fromB": "hq",
+     "toB": "school",
+     "srcType": "agent_msg",
+     "srcTs": [
+      "2026-09-11T17:18:38.874000Z"
+     ],
+     "count": 1,
+     "ts": "2026-09-11T17:18:38.874000Z",
+     "id": "2026-09-11#10"
+    },
+    {
+     "kind": "msg",
+     "label": "Message",
+     "from": "Char Tutor",
+     "to": "Michael",
+     "fromB": "school",
+     "toB": "hq",
+     "srcType": "agent_msg",
+     "srcTs": [
+      "2026-09-11T17:18:57.417000Z"
+     ],
+     "count": 1,
+     "ts": "2026-09-11T17:18:57.417000Z",
+     "id": "2026-09-11#11"
+    },
+    {
+     "kind": "msg",
+     "label": "Message",
+     "from": "Michael",
+     "to": "Vic Tutor",
+     "fromB": "hq",
+     "toB": "school",
+     "srcType": "agent_msg",
+     "srcTs": [
+      "2026-09-11T17:20:49.601000Z",
+      "2026-09-11T17:21:31.872000Z",
+      "2026-09-11T17:22:44.978000Z"
+     ],
+     "count": 3,
+     "ts": "2026-09-11T17:20:49.601000Z",
+     "id": "2026-09-11#12"
+    },
+    {
+     "kind": "msg",
+     "label": "Message",
+     "from": "Vic Tutor",
+     "to": "Michael",
+     "fromB": "school",
+     "toB": "hq",
+     "srcType": "agent_msg",
+     "srcTs": [
+      "2026-09-11T17:21:01.118000Z",
+      "2026-09-11T17:21:35.627000Z",
+      "2026-09-11T17:22:49.919000Z"
+     ],
+     "count": 3,
+     "ts": "2026-09-11T17:21:01.118000Z",
+     "id": "2026-09-11#13"
+    },
+    {
+     "kind": "msg",
+     "label": "Message",
+     "from": "Michael",
+     "to": "Char Tutor",
+     "fromB": "hq",
+     "toB": "school",
+     "srcType": "agent_msg",
+     "srcTs": [
+      "2026-09-11T17:22:45.293000Z"
+     ],
+     "count": 1,
+     "ts": "2026-09-11T17:22:45.293000Z",
+     "id": "2026-09-11#14"
+    },
+    {
+     "kind": "msg",
+     "label": "Message",
+     "from": "Char Tutor",
+     "to": "Michael",
+     "fromB": "school",
+     "toB": "hq",
+     "srcType": "agent_msg",
+     "srcTs": [
+      "2026-09-11T17:22:51.835000Z"
+     ],
+     "count": 1,
+     "ts": "2026-09-11T17:22:51.835000Z",
+     "id": "2026-09-11#15"
+    },
+    {
+     "kind": "msg",
+     "label": "Message",
+     "from": "Michael",
+     "to": "Oscar",
+     "fromB": "hq",
+     "toB": "bank",
+     "srcType": "agent_msg",
+     "srcTs": [
+      "2026-09-11T17:26:35.007000Z",
+      "2026-09-11T17:27:30.723000Z"
+     ],
+     "count": 2,
+     "ts": "2026-09-11T17:26:35.007000Z",
+     "id": "2026-09-11#16"
+    },
+    {
+     "kind": "msg",
+     "label": "Message",
+     "from": "Oscar",
+     "to": "Michael",
+     "fromB": "bank",
+     "toB": "hq",
+     "srcType": "agent_msg",
+     "srcTs": [
+      "2026-09-11T17:27:09.428000Z",
+      "2026-09-11T17:27:38.456000Z"
+     ],
+     "count": 2,
+     "ts": "2026-09-11T17:27:09.428000Z",
+     "id": "2026-09-11#17"
+    },
+    {
+     "kind": "boyd",
+     "label": "Message from Boyd",
+     "from": "Boyd",
+     "to": "Michael",
+     "fromB": "boyd",
+     "toB": "hq",
+     "srcType": "boyd_msg",
+     "srcTs": [
+      "2026-09-11T17:28:08.567000Z"
+     ],
+     "count": 1,
+     "ts": "2026-09-11T17:28:08.567000Z",
+     "id": "2026-09-11#18"
+    },
+    {
+     "kind": "msg",
+     "label": "Message",
+     "from": "Michael",
+     "to": "Jim",
+     "fromB": "hq",
+     "toB": "library",
+     "srcType": "agent_msg",
+     "srcTs": [
+      "2026-09-11T17:28:53.584000Z",
+      "2026-09-11T17:29:04.001000Z"
+     ],
+     "count": 2,
+     "ts": "2026-09-11T17:28:53.584000Z",
+     "id": "2026-09-11#19"
+    },
+    {
+     "kind": "msg",
+     "label": "Message",
+     "from": "Michael",
+     "to": "Kelly",
+     "fromB": "hq",
+     "toB": "observatory",
+     "srcType": "agent_msg",
+     "srcTs": [
+      "2026-09-11T17:28:54.058000Z",
+      "2026-09-11T17:29:04.144000Z"
+     ],
+     "count": 2,
+     "ts": "2026-09-11T17:28:54.058000Z",
+     "id": "2026-09-11#20"
+    },
+    {
+     "kind": "msg",
+     "label": "Message",
+     "from": "Jim",
+     "to": "Michael",
+     "fromB": "library",
+     "toB": "hq",
+     "srcType": "agent_msg",
+     "srcTs": [
+      "2026-09-11T17:30:09.351000Z"
+     ],
+     "count": 1,
+     "ts": "2026-09-11T17:30:09.351000Z",
+     "id": "2026-09-11#21"
+    },
+    {
+     "kind": "msg",
+     "label": "Message",
+     "from": "Jim",
+     "to": "Michael",
+     "fromB": "library",
+     "toB": "hq",
+     "srcType": "agent_msg",
+     "srcTs": [
+      "2026-09-11T17:40:49.976000Z",
+      "2026-09-11T17:40:58.055000Z"
+     ],
+     "count": 2,
+     "ts": "2026-09-11T17:40:49.976000Z",
+     "id": "2026-09-11#22"
+    },
+    {
+     "kind": "msg",
+     "label": "Message",
+     "from": "Michael",
+     "to": "Jim",
+     "fromB": "hq",
+     "toB": "library",
+     "srcType": "agent_msg",
+     "srcTs": [
+      "2026-09-11T17:40:54.726000Z"
+     ],
+     "count": 1,
+     "ts": "2026-09-11T17:40:54.726000Z",
+     "id": "2026-09-11#23"
+    },
+    {
+     "kind": "routine",
+     "label": "Char weeknight homework check-in",
+     "from": "Char Tutor",
+     "to": null,
+     "fromB": "school",
+     "toB": null,
+     "srcType": "routine_run",
+     "srcTs": [
+      "2026-09-11T23:29:00.991000Z"
+     ],
+     "count": 1,
+     "ts": "2026-09-11T23:29:00.991000Z",
+     "status": "ok",
+     "id": "2026-09-11#24"
+    },
+    {
+     "kind": "routine",
+     "label": "Vic weeknight homework check-in",
+     "from": "Vic Tutor",
+     "to": null,
+     "fromB": "school",
+     "toB": null,
+     "srcType": "routine_run",
+     "srcTs": [
+      "2026-09-11T23:35:31.145000Z"
+     ],
+     "count": 1,
+     "ts": "2026-09-11T23:35:31.145000Z",
+     "status": "ok",
+     "id": "2026-09-11#25"
+    },
+    {
+     "kind": "routine",
+     "label": "Jim daily interest note",
+     "from": "Jim",
+     "to": null,
+     "fromB": "library",
+     "toB": null,
+     "srcType": "routine_run",
+     "srcTs": [
+      "2026-09-12T00:07:46.732000Z"
+     ],
+     "count": 1,
+     "ts": "2026-09-12T00:07:46.732000Z",
+     "status": "ok",
+     "id": "2026-09-11#26"
+    }
+   ],
+   "counts": {
+    "routine": 7,
+    "boyd": 4,
+    "msg": 16
+   },
+   "cast": [
+    "Boyd Family Times (archive)",
+    "Char Tutor",
+    "Dr. EggBot",
+    "Jim",
+    "Kelly",
+    "Michael",
+    "Oscar",
+    "Pam",
+    "Vic Tutor"
+   ],
+   "topPair": "Char Tutor ↔ Michael",
+   "firstTs": "2026-09-11T09:19:24.970000Z",
+   "lastTs": "2026-09-12T00:07:46.732000Z"
+  },
+  {
+   "day": "2026-09-15",
+   "title": "Tuesday, Sep 15",
+   "short": "Tue Sep 15",
+   "jobs": [
+    {
+     "kind": "routine",
+     "label": "Morning Boyd Family Times",
+     "from": "Boyd Family Times (archive)",
+     "to": null,
+     "fromB": "press",
+     "toB": null,
+     "srcType": "routine_run",
+     "srcTs": [
+      "2026-09-15T09:05:52.254000Z"
+     ],
+     "count": 1,
+     "ts": "2026-09-15T09:05:52.254000Z",
+     "status": "ok",
+     "id": "2026-09-15#0"
+    },
+    {
+     "kind": "output",
+     "label": "Family Times edition",
+     "from": "Boyd Family Times",
+     "to": null,
+     "fromB": "press",
+     "toB": null,
+     "srcType": "dated_output",
+     "srcTs": [
+      "2026-09-15T09:16:00Z"
+     ],
+     "count": 1,
+     "ts": "2026-09-15T09:16:00Z",
+     "id": "2026-09-15#1"
+    },
+    {
+     "kind": "routine",
+     "label": "transcript-healthcheck",
+     "from": "Dr. EggBot",
+     "to": null,
+     "fromB": "hatchery",
+     "toB": null,
+     "srcType": "routine_run",
+     "srcTs": [
+      "2026-09-15T10:40:39.471000Z"
+     ],
+     "count": 1,
+     "ts": "2026-09-15T10:40:39.471000Z",
+     "status": "ok",
+     "id": "2026-09-15#2"
+    },
+    {
+     "kind": "boyd",
+     "label": "Message from Boyd",
+     "from": "Boyd",
+     "to": "Dr. EggBot",
+     "fromB": "boyd",
+     "toB": "hatchery",
+     "srcType": "boyd_msg",
+     "srcTs": [
+      "2026-09-15T11:08:41.198000Z"
+     ],
+     "count": 1,
+     "ts": "2026-09-15T11:08:41.198000Z",
+     "id": "2026-09-15#3"
+    },
+    {
+     "kind": "msg",
+     "label": "Message",
+     "from": "Dr. EggBot",
+     "to": "Char Tutor",
+     "fromB": "hatchery",
+     "toB": "school",
+     "srcType": "agent_msg",
+     "srcTs": [
+      "2026-09-15T11:09:51.693000Z"
+     ],
+     "count": 1,
+     "ts": "2026-09-15T11:09:51.693000Z",
+     "id": "2026-09-15#4"
+    },
+    {
+     "kind": "msg",
+     "label": "Message",
+     "from": "Dr. EggBot",
+     "to": "Vic Tutor",
+     "fromB": "hatchery",
+     "toB": "school",
+     "srcType": "agent_msg",
+     "srcTs": [
+      "2026-09-15T11:09:53.400000Z"
+     ],
+     "count": 1,
+     "ts": "2026-09-15T11:09:53.400000Z",
+     "id": "2026-09-15#5"
+    },
+    {
+     "kind": "msg",
+     "label": "Message",
+     "from": "Char Tutor",
+     "to": "Dr. EggBot",
+     "fromB": "school",
+     "toB": "hatchery",
+     "srcType": "agent_msg",
+     "srcTs": [
+      "2026-09-15T11:10:14.593000Z"
+     ],
+     "count": 1,
+     "ts": "2026-09-15T11:10:14.593000Z",
+     "id": "2026-09-15#6"
+    },
+    {
+     "kind": "boyd",
+     "label": "Message from Boyd",
+     "from": "Boyd",
+     "to": "Boyd Family Times (archive)",
+     "fromB": "boyd",
+     "toB": "press",
+     "srcType": "boyd_msg",
+     "srcTs": [
+      "2026-09-15T11:10:47.356000Z",
+      "2026-09-15T11:12:53.594000Z"
+     ],
+     "count": 2,
+     "ts": "2026-09-15T11:10:47.356000Z",
+     "id": "2026-09-15#7"
+    },
+    {
+     "kind": "msg",
+     "label": "Message",
+     "from": "Vic Tutor",
+     "to": "Dr. EggBot",
+     "fromB": "school",
+     "toB": "hatchery",
+     "srcType": "agent_msg",
+     "srcTs": [
+      "2026-09-15T11:12:17.263000Z"
+     ],
+     "count": 1,
+     "ts": "2026-09-15T11:12:17.263000Z",
+     "id": "2026-09-15#8"
+    },
+    {
+     "kind": "routine",
+     "label": "Daily podcast listen brief",
+     "from": "Jim",
+     "to": null,
+     "fromB": "library",
+     "toB": null,
+     "srcType": "routine_run",
+     "srcTs": [
+      "2026-09-15T11:26:55.111000Z"
+     ],
+     "count": 1,
+     "ts": "2026-09-15T11:26:55.111000Z",
+     "status": "ok",
+     "id": "2026-09-15#9"
+    },
+    {
+     "kind": "routine",
+     "label": "Weekday family calendar scan",
+     "from": "Pam",
+     "to": null,
+     "fromB": "clubhouse",
+     "toB": null,
+     "srcType": "routine_run",
+     "srcTs": [
+      "2026-09-15T11:31:25.444000Z"
+     ],
+     "count": 1,
+     "ts": "2026-09-15T11:31:25.444000Z",
+     "status": "ok",
+     "id": "2026-09-15#10"
+    },
+    {
+     "kind": "msg",
+     "label": "Message",
+     "from": "Pam",
+     "to": "Michael",
+     "fromB": "clubhouse",
+     "toB": "hq",
+     "srcType": "agent_msg",
+     "srcTs": [
+      "2026-09-15T11:35:47.156000Z"
+     ],
+     "count": 1,
+     "ts": "2026-09-15T11:35:47.156000Z",
+     "id": "2026-09-15#11"
+    },
+    {
+     "kind": "msg",
+     "label": "Message",
+     "from": "Oscar",
+     "to": "Michael",
+     "fromB": "bank",
+     "toB": "hq",
+     "srcType": "agent_msg",
+     "srcTs": [
+      "2026-09-15T13:05:59.245000Z"
+     ],
+     "count": 1,
+     "ts": "2026-09-15T13:05:59.245000Z",
+     "id": "2026-09-15#12"
+    },
+    {
+     "kind": "routine",
+     "label": "Vic weeknight homework check-in",
+     "from": "Vic Tutor",
+     "to": null,
+     "fromB": "school",
+     "toB": null,
+     "srcType": "routine_run",
+     "srcTs": [
+      "2026-09-15T23:14:01.810000Z"
+     ],
+     "count": 1,
+     "ts": "2026-09-15T23:14:01.810000Z",
+     "status": "ok",
+     "id": "2026-09-15#13"
+    },
+    {
+     "kind": "routine",
+     "label": "Char weeknight homework check-in",
+     "from": "Char Tutor",
+     "to": null,
+     "fromB": "school",
+     "toB": null,
+     "srcType": "routine_run",
+     "srcTs": [
+      "2026-09-15T23:14:01.862000Z"
+     ],
+     "count": 1,
+     "ts": "2026-09-15T23:14:01.862000Z",
+     "status": "ok",
+     "id": "2026-09-15#14"
+    },
+    {
+     "kind": "boyd",
+     "label": "Message from Boyd",
+     "from": "Boyd",
+     "to": "Oscar",
+     "fromB": "boyd",
+     "toB": "bank",
+     "srcType": "boyd_msg",
+     "srcTs": [
+      "2026-09-15T23:16:46.478000Z",
+      "2026-09-15T23:18:38.934000Z"
+     ],
+     "count": 2,
+     "ts": "2026-09-15T23:16:46.478000Z",
+     "id": "2026-09-15#15"
+    },
+    {
+     "kind": "msg",
+     "label": "Message",
+     "from": "Oscar",
+     "to": "Michael",
+     "fromB": "bank",
+     "toB": "hq",
+     "srcType": "agent_msg",
+     "srcTs": [
+      "2026-09-15T23:17:22.932000Z",
+      "2026-09-15T23:18:45.232000Z"
+     ],
+     "count": 2,
+     "ts": "2026-09-15T23:17:22.932000Z",
+     "id": "2026-09-15#16"
+    },
+    {
+     "kind": "routine",
+     "label": "Jim daily interest note",
+     "from": "Jim",
+     "to": null,
+     "fromB": "library",
+     "toB": null,
+     "srcType": "routine_run",
+     "srcTs": [
+      "2026-09-16T00:24:03.065000Z"
+     ],
+     "count": 1,
+     "ts": "2026-09-16T00:24:03.065000Z",
+     "status": "ok",
+     "id": "2026-09-15#17"
+    },
+    {
+     "kind": "boyd",
+     "label": "Message from Boyd",
+     "from": "Boyd",
+     "to": "Vic Tutor",
+     "fromB": "boyd",
+     "toB": "school",
+     "srcType": "boyd_msg",
+     "srcTs": [
+      "2026-09-16T01:03:05.717000Z",
+      "2026-09-16T01:08:39.455000Z"
+     ],
+     "count": 2,
+     "ts": "2026-09-16T01:03:05.717000Z",
+     "id": "2026-09-15#18"
+    },
+    {
+     "kind": "boyd",
+     "label": "Message from Boyd",
+     "from": "Boyd",
+     "to": "Vic Tutor",
+     "fromB": "boyd",
+     "toB": "school",
+     "srcType": "boyd_msg",
+     "srcTs": [
+      "2026-09-16T01:19:51.249000Z"
+     ],
+     "count": 1,
+     "ts": "2026-09-16T01:19:51.249000Z",
+     "id": "2026-09-15#19"
+    },
+    {
+     "kind": "boyd",
+     "label": "Message from Boyd",
+     "from": "Boyd",
+     "to": "Char Tutor",
+     "fromB": "boyd",
+     "toB": "school",
+     "srcType": "boyd_msg",
+     "srcTs": [
+      "2026-09-16T01:21:29.027000Z"
+     ],
+     "count": 1,
+     "ts": "2026-09-16T01:21:29.027000Z",
+     "id": "2026-09-15#20"
+    },
+    {
+     "kind": "boyd",
+     "label": "Message from Boyd",
+     "from": "Boyd",
+     "to": "Michael",
+     "fromB": "boyd",
+     "toB": "hq",
+     "srcType": "boyd_msg",
+     "srcTs": [
+      "2026-09-16T01:25:03.023000Z",
+      "2026-09-16T01:29:39.275000Z",
+      "2026-09-16T01:35:01.081000Z"
+     ],
+     "count": 3,
+     "ts": "2026-09-16T01:25:03.023000Z",
+     "id": "2026-09-15#21"
+    },
+    {
+     "kind": "msg",
+     "label": "Message",
+     "from": "Michael",
+     "to": "Char Tutor",
+     "fromB": "hq",
+     "toB": "school",
+     "srcType": "agent_msg",
+     "srcTs": [
+      "2026-09-16T01:31:52.209000Z"
+     ],
+     "count": 1,
+     "ts": "2026-09-16T01:31:52.209000Z",
+     "id": "2026-09-15#22"
+    },
+    {
+     "kind": "msg",
+     "label": "Message",
+     "from": "Michael",
+     "to": "Vic Tutor",
+     "fromB": "hq",
+     "toB": "school",
+     "srcType": "agent_msg",
+     "srcTs": [
+      "2026-09-16T01:31:53.044000Z"
+     ],
+     "count": 1,
+     "ts": "2026-09-16T01:31:53.044000Z",
+     "id": "2026-09-15#23"
+    },
+    {
+     "kind": "msg",
+     "label": "Message",
+     "from": "Char Tutor",
+     "to": "Michael",
+     "fromB": "school",
+     "toB": "hq",
+     "srcType": "agent_msg",
+     "srcTs": [
+      "2026-09-16T01:32:10.806000Z"
+     ],
+     "count": 1,
+     "ts": "2026-09-16T01:32:10.806000Z",
+     "id": "2026-09-15#24"
+    },
+    {
+     "kind": "msg",
+     "label": "Message",
+     "from": "Char Tutor",
+     "to": "Vic Tutor",
+     "fromB": "school",
+     "toB": "school",
+     "srcType": "agent_msg",
+     "srcTs": [
+      "2026-09-16T01:32:10.816000Z",
+      "2026-09-16T01:32:24.595000Z"
+     ],
+     "count": 2,
+     "ts": "2026-09-16T01:32:10.816000Z",
+     "id": "2026-09-15#25"
+    },
+    {
+     "kind": "msg",
+     "label": "Message",
+     "from": "Vic Tutor",
+     "to": "Michael",
+     "fromB": "school",
+     "toB": "hq",
+     "srcType": "agent_msg",
+     "srcTs": [
+      "2026-09-16T01:32:12.318000Z"
+     ],
+     "count": 1,
+     "ts": "2026-09-16T01:32:12.318000Z",
+     "id": "2026-09-15#26"
+    },
+    {
+     "kind": "msg",
+     "label": "Message",
+     "from": "Vic Tutor",
+     "to": "Char Tutor",
+     "fromB": "school",
+     "toB": "school",
+     "srcType": "agent_msg",
+     "srcTs": [
+      "2026-09-16T01:32:17.814000Z"
+     ],
+     "count": 1,
+     "ts": "2026-09-16T01:32:17.814000Z",
+     "id": "2026-09-15#27"
+    },
+    {
+     "kind": "msg",
+     "label": "Message",
+     "from": "Michael",
+     "to": "Char Tutor",
+     "fromB": "hq",
+     "toB": "school",
+     "srcType": "agent_msg",
+     "srcTs": [
+      "2026-09-16T01:35:19.523000Z"
+     ],
+     "count": 1,
+     "ts": "2026-09-16T01:35:19.523000Z",
+     "id": "2026-09-15#28"
+    },
+    {
+     "kind": "msg",
+     "label": "Message",
+     "from": "Michael",
+     "to": "Vic Tutor",
+     "fromB": "hq",
+     "toB": "school",
+     "srcType": "agent_msg",
+     "srcTs": [
+      "2026-09-16T01:35:21.329000Z"
+     ],
+     "count": 1,
+     "ts": "2026-09-16T01:35:21.329000Z",
+     "id": "2026-09-15#29"
+    },
+    {
+     "kind": "msg",
+     "label": "Message",
+     "from": "Char Tutor",
+     "to": "Michael",
+     "fromB": "school",
+     "toB": "hq",
+     "srcType": "agent_msg",
+     "srcTs": [
+      "2026-09-16T01:35:28.547000Z"
+     ],
+     "count": 1,
+     "ts": "2026-09-16T01:35:28.547000Z",
+     "id": "2026-09-15#30"
+    },
+    {
+     "kind": "msg",
+     "label": "Message",
+     "from": "Char Tutor",
+     "to": "Vic Tutor",
+     "fromB": "school",
+     "toB": "school",
+     "srcType": "agent_msg",
+     "srcTs": [
+      "2026-09-16T01:35:28.615000Z",
+      "2026-09-16T01:35:51.603000Z"
+     ],
+     "count": 2,
+     "ts": "2026-09-16T01:35:28.615000Z",
+     "id": "2026-09-15#31"
+    },
+    {
+     "kind": "msg",
+     "label": "Message",
+     "from": "Vic Tutor",
+     "to": "Michael",
+     "fromB": "school",
+     "toB": "hq",
+     "srcType": "agent_msg",
+     "srcTs": [
+      "2026-09-16T01:35:36.935000Z"
+     ],
+     "count": 1,
+     "ts": "2026-09-16T01:35:36.935000Z",
+     "id": "2026-09-15#32"
+    },
+    {
+     "kind": "msg",
+     "label": "Message",
+     "from": "Vic Tutor",
+     "to": "Char Tutor",
+     "fromB": "school",
+     "toB": "school",
+     "srcType": "agent_msg",
+     "srcTs": [
+      "2026-09-16T01:35:44.169000Z"
+     ],
+     "count": 1,
+     "ts": "2026-09-16T01:35:44.169000Z",
+     "id": "2026-09-15#33"
+    }
+   ],
+   "counts": {
+    "routine": 7,
+    "output": 1,
+    "boyd": 7,
+    "msg": 19
+   },
+   "cast": [
+    "Boyd Family Times",
+    "Boyd Family Times (archive)",
+    "Char Tutor",
+    "Dr. EggBot",
+    "Jim",
+    "Michael",
+    "Oscar",
+    "Pam",
+    "Vic Tutor"
+   ],
+   "topPair": "Char Tutor ↔ Michael",
+   "firstTs": "2026-09-15T09:05:52.254000Z",
+   "lastTs": "2026-09-16T01:35:44.169000Z"
+  },
+  {
+   "day": "2026-08-20",
+   "title": "Thursday, Aug 20",
+   "short": "Thu Aug 20",
+   "jobs": [
+    {
+     "kind": "boyd",
+     "label": "Message from Boyd",
+     "from": "Boyd",
+     "to": "Michael",
+     "fromB": "boyd",
+     "toB": "hq",
+     "srcType": "boyd_msg",
+     "srcTs": [
+      "2026-08-20T23:59:41.867000Z"
+     ],
+     "count": 1,
+     "ts": "2026-08-20T23:59:41.867000Z",
+     "id": "2026-08-20#0"
+    },
+    {
+     "kind": "msg",
+     "label": "Message",
+     "from": "Michael",
+     "to": "Pam",
+     "fromB": "hq",
+     "toB": "clubhouse",
+     "srcType": "agent_msg",
+     "srcTs": [
+      "2026-08-21T00:17:31.342000Z"
+     ],
+     "count": 1,
+     "ts": "2026-08-21T00:17:31.342000Z",
+     "id": "2026-08-20#1"
+    },
+    {
+     "kind": "msg",
+     "label": "Message",
+     "from": "Pam",
+     "to": "Michael",
+     "fromB": "clubhouse",
+     "toB": "hq",
+     "srcType": "agent_msg",
+     "srcTs": [
+      "2026-08-21T00:18:19.469000Z",
+      "2026-08-21T00:20:26.555000Z"
+     ],
+     "count": 2,
+     "ts": "2026-08-21T00:18:19.469000Z",
+     "id": "2026-08-20#2"
+    },
+    {
+     "kind": "msg",
+     "label": "Message",
+     "from": "Michael",
+     "to": "Pam",
+     "fromB": "hq",
+     "toB": "clubhouse",
+     "srcType": "agent_msg",
+     "srcTs": [
+      "2026-08-21T00:24:02.596000Z",
+      "2026-08-21T00:26:22.755000Z"
+     ],
+     "count": 2,
+     "ts": "2026-08-21T00:24:02.596000Z",
+     "id": "2026-08-20#3"
+    },
+    {
+     "kind": "msg",
+     "label": "Message",
+     "from": "Pam",
+     "to": "Michael",
+     "fromB": "clubhouse",
+     "toB": "hq",
+     "srcType": "agent_msg",
+     "srcTs": [
+      "2026-08-21T00:24:24.538000Z"
+     ],
+     "count": 1,
+     "ts": "2026-08-21T00:24:24.538000Z",
+     "id": "2026-08-20#4"
+    },
+    {
+     "kind": "boyd",
+     "label": "Message from Boyd",
+     "from": "Boyd",
+     "to": "Michael",
+     "fromB": "boyd",
+     "toB": "hq",
+     "srcType": "boyd_msg",
+     "srcTs": [
+      "2026-08-21T00:31:42.054000Z"
+     ],
+     "count": 1,
+     "ts": "2026-08-21T00:31:42.054000Z",
+     "id": "2026-08-20#5"
+    },
+    {
+     "kind": "msg",
+     "label": "Message",
+     "from": "Michael",
+     "to": "Pam",
+     "fromB": "hq",
+     "toB": "clubhouse",
+     "srcType": "agent_msg",
+     "srcTs": [
+      "2026-08-21T00:35:29.587000Z"
+     ],
+     "count": 1,
+     "ts": "2026-08-21T00:35:29.587000Z",
+     "id": "2026-08-20#6"
+    },
+    {
+     "kind": "msg",
+     "label": "Message",
+     "from": "Pam",
+     "to": "Michael",
+     "fromB": "clubhouse",
+     "toB": "hq",
+     "srcType": "agent_msg",
+     "srcTs": [
+      "2026-08-21T00:36:08.797000Z",
+      "2026-08-21T00:38:56.435000Z"
+     ],
+     "count": 2,
+     "ts": "2026-08-21T00:36:08.797000Z",
+     "id": "2026-08-20#7"
+    },
+    {
+     "kind": "msg",
+     "label": "Message",
+     "from": "Michael",
+     "to": "Pam",
+     "fromB": "hq",
+     "toB": "clubhouse",
+     "srcType": "agent_msg",
+     "srcTs": [
+      "2026-08-21T00:38:41.661000Z"
+     ],
+     "count": 1,
+     "ts": "2026-08-21T00:38:41.661000Z",
+     "id": "2026-08-20#8"
+    },
+    {
+     "kind": "boyd",
+     "label": "Message from Boyd",
+     "from": "Boyd",
+     "to": "Michael",
+     "fromB": "boyd",
+     "toB": "hq",
+     "srcType": "boyd_msg",
+     "srcTs": [
+      "2026-08-21T00:49:52.985000Z"
+     ],
+     "count": 1,
+     "ts": "2026-08-21T00:49:52.985000Z",
+     "id": "2026-08-20#9"
+    },
+    {
+     "kind": "msg",
+     "label": "Message",
+     "from": "Michael",
+     "to": "Oscar",
+     "fromB": "hq",
+     "toB": "bank",
+     "srcType": "agent_msg",
+     "srcTs": [
+      "2026-08-21T00:50:41.367000Z"
+     ],
+     "count": 1,
+     "ts": "2026-08-21T00:50:41.367000Z",
+     "id": "2026-08-20#10"
+    },
+    {
+     "kind": "msg",
+     "label": "Message",
+     "from": "Oscar",
+     "to": "Michael",
+     "fromB": "bank",
+     "toB": "hq",
+     "srcType": "agent_msg",
+     "srcTs": [
+      "2026-08-21T00:51:50.990000Z",
+      "2026-08-21T00:53:42.418000Z",
+      "2026-08-21T00:53:54.440000Z"
+     ],
+     "count": 3,
+     "ts": "2026-08-21T00:51:50.990000Z",
+     "id": "2026-08-20#11"
+    },
+    {
+     "kind": "msg",
+     "label": "Message",
+     "from": "Michael",
+     "to": "Oscar",
+     "fromB": "hq",
+     "toB": "bank",
+     "srcType": "agent_msg",
+     "srcTs": [
+      "2026-08-21T00:53:48.957000Z"
+     ],
+     "count": 1,
+     "ts": "2026-08-21T00:53:48.957000Z",
+     "id": "2026-08-20#12"
+    },
+    {
+     "kind": "boyd",
+     "label": "Message from Boyd",
+     "from": "Boyd",
+     "to": "Michael",
+     "fromB": "boyd",
+     "toB": "hq",
+     "srcType": "boyd_msg",
+     "srcTs": [
+      "2026-08-21T01:09:37.741000Z"
+     ],
+     "count": 1,
+     "ts": "2026-08-21T01:09:37.741000Z",
+     "id": "2026-08-20#13"
+    },
+    {
+     "kind": "boyd",
+     "label": "Message from Boyd",
+     "from": "Boyd",
+     "to": "Michael",
+     "fromB": "boyd",
+     "toB": "hq",
+     "srcType": "boyd_msg",
+     "srcTs": [
+      "2026-08-21T01:28:07.413000Z"
+     ],
+     "count": 1,
+     "ts": "2026-08-21T01:28:07.413000Z",
+     "id": "2026-08-20#14"
+    },
+    {
+     "kind": "msg",
+     "label": "Message",
+     "from": "Michael",
+     "to": "Oscar",
+     "fromB": "hq",
+     "toB": "bank",
+     "srcType": "agent_msg",
+     "srcTs": [
+      "2026-08-21T01:28:45.759000Z"
+     ],
+     "count": 1,
+     "ts": "2026-08-21T01:28:45.759000Z",
+     "id": "2026-08-20#15"
+    },
+    {
+     "kind": "msg",
+     "label": "Message",
+     "from": "Oscar",
+     "to": "Michael",
+     "fromB": "bank",
+     "toB": "hq",
+     "srcType": "agent_msg",
+     "srcTs": [
+      "2026-08-21T01:29:13.752000Z",
+      "2026-08-21T01:29:47.311000Z",
+      "2026-08-21T01:31:13.845000Z"
+     ],
+     "count": 3,
+     "ts": "2026-08-21T01:29:13.752000Z",
+     "id": "2026-08-20#16"
+    },
+    {
+     "kind": "boyd",
+     "label": "Message from Boyd",
+     "from": "Boyd",
+     "to": "Michael",
+     "fromB": "boyd",
+     "toB": "hq",
+     "srcType": "boyd_msg",
+     "srcTs": [
+      "2026-08-21T01:40:12.004000Z"
+     ],
+     "count": 1,
+     "ts": "2026-08-21T01:40:12.004000Z",
+     "id": "2026-08-20#17"
+    },
+    {
+     "kind": "msg",
+     "label": "Message",
+     "from": "Michael",
+     "to": "Oscar",
+     "fromB": "hq",
+     "toB": "bank",
+     "srcType": "agent_msg",
+     "srcTs": [
+      "2026-08-21T01:40:39.325000Z"
+     ],
+     "count": 1,
+     "ts": "2026-08-21T01:40:39.325000Z",
+     "id": "2026-08-20#18"
+    },
+    {
+     "kind": "msg",
+     "label": "Message",
+     "from": "Oscar",
+     "to": "Michael",
+     "fromB": "bank",
+     "toB": "hq",
+     "srcType": "agent_msg",
+     "srcTs": [
+      "2026-08-21T01:41:16.126000Z",
+      "2026-08-21T01:41:42.425000Z",
+      "2026-08-21T01:43:24.223000Z"
+     ],
+     "count": 3,
+     "ts": "2026-08-21T01:41:16.126000Z",
+     "id": "2026-08-20#19"
+    },
+    {
+     "kind": "boyd",
+     "label": "Message from Boyd",
+     "from": "Boyd",
+     "to": "Michael",
+     "fromB": "boyd",
+     "toB": "hq",
+     "srcType": "boyd_msg",
+     "srcTs": [
+      "2026-08-21T02:16:17.338000Z"
+     ],
+     "count": 1,
+     "ts": "2026-08-21T02:16:17.338000Z",
+     "id": "2026-08-20#20"
+    },
+    {
+     "kind": "msg",
+     "label": "Message",
+     "from": "Michael",
+     "to": "Oscar",
+     "fromB": "hq",
+     "toB": "bank",
+     "srcType": "agent_msg",
+     "srcTs": [
+      "2026-08-21T02:17:00.308000Z"
+     ],
+     "count": 1,
+     "ts": "2026-08-21T02:17:00.308000Z",
+     "id": "2026-08-20#21"
+    },
+    {
+     "kind": "msg",
+     "label": "Message",
+     "from": "Oscar",
+     "to": "Michael",
+     "fromB": "bank",
+     "toB": "hq",
+     "srcType": "agent_msg",
+     "srcTs": [
+      "2026-08-21T02:17:27.513000Z"
+     ],
+     "count": 1,
+     "ts": "2026-08-21T02:17:27.513000Z",
+     "id": "2026-08-20#22"
+    },
+    {
+     "kind": "msg",
+     "label": "Message",
+     "from": "Oscar",
+     "to": "Michael",
+     "fromB": "bank",
+     "toB": "hq",
+     "srcType": "agent_msg",
+     "srcTs": [
+      "2026-08-21T02:21:09.486000Z",
+      "2026-08-21T02:23:30.560000Z"
+     ],
+     "count": 2,
+     "ts": "2026-08-21T02:21:09.486000Z",
+     "id": "2026-08-20#23"
+    },
+    {
+     "kind": "msg",
+     "label": "Message",
+     "from": "Michael",
+     "to": "Oscar",
+     "fromB": "hq",
+     "toB": "bank",
+     "srcType": "agent_msg",
+     "srcTs": [
+      "2026-08-21T02:23:24.632000Z"
+     ],
+     "count": 1,
+     "ts": "2026-08-21T02:23:24.632000Z",
+     "id": "2026-08-20#24"
+    },
+    {
+     "kind": "boyd",
+     "label": "Message from Boyd",
+     "from": "Boyd",
+     "to": "Michael",
+     "fromB": "boyd",
+     "toB": "hq",
+     "srcType": "boyd_msg",
+     "srcTs": [
+      "2026-08-21T02:26:44.476000Z",
+      "2026-08-21T02:31:43.548000Z"
+     ],
+     "count": 2,
+     "ts": "2026-08-21T02:26:44.476000Z",
+     "id": "2026-08-20#25"
+    },
+    {
+     "kind": "msg",
+     "label": "Message",
+     "from": "Michael",
+     "to": "Oscar",
+     "fromB": "hq",
+     "toB": "bank",
+     "srcType": "agent_msg",
+     "srcTs": [
+      "2026-08-21T02:27:02.672000Z"
+     ],
+     "count": 1,
+     "ts": "2026-08-21T02:27:02.672000Z",
+     "id": "2026-08-20#26"
+    },
+    {
+     "kind": "msg",
+     "label": "Message",
+     "from": "Oscar",
+     "to": "Michael",
+     "fromB": "bank",
+     "toB": "hq",
+     "srcType": "agent_msg",
+     "srcTs": [
+      "2026-08-21T02:27:59.698000Z",
+      "2026-08-21T02:30:18.912000Z",
+      "2026-08-21T02:32:04.261000Z"
+     ],
+     "count": 3,
+     "ts": "2026-08-21T02:27:59.698000Z",
+     "id": "2026-08-20#27"
+    },
+    {
+     "kind": "msg",
+     "label": "Message",
+     "from": "Michael",
+     "to": "Oscar",
+     "fromB": "hq",
+     "toB": "bank",
+     "srcType": "agent_msg",
+     "srcTs": [
+      "2026-08-21T02:31:51.102000Z"
+     ],
+     "count": 1,
+     "ts": "2026-08-21T02:31:51.102000Z",
+     "id": "2026-08-20#28"
+    },
+    {
+     "kind": "boyd",
+     "label": "Message from Boyd",
+     "from": "Boyd",
+     "to": "Michael",
+     "fromB": "boyd",
+     "toB": "hq",
+     "srcType": "boyd_msg",
+     "srcTs": [
+      "2026-08-21T02:45:20.619000Z",
+      "2026-08-21T02:49:05.766000Z",
+      "2026-08-21T02:52:32.297000Z"
+     ],
+     "count": 3,
+     "ts": "2026-08-21T02:45:20.619000Z",
+     "id": "2026-08-20#29"
+    },
+    {
+     "kind": "msg",
+     "label": "Message",
+     "from": "Michael",
+     "to": "Jim",
+     "fromB": "hq",
+     "toB": "library",
+     "srcType": "agent_msg",
+     "srcTs": [
+      "2026-08-21T02:46:39.189000Z"
+     ],
+     "count": 1,
+     "ts": "2026-08-21T02:46:39.189000Z",
+     "id": "2026-08-20#30"
+    },
+    {
+     "kind": "msg",
+     "label": "Message",
+     "from": "Jim",
+     "to": "Michael",
+     "fromB": "library",
+     "toB": "hq",
+     "srcType": "agent_msg",
+     "srcTs": [
+      "2026-08-21T02:47:30.143000Z"
+     ],
+     "count": 1,
+     "ts": "2026-08-21T02:47:30.143000Z",
+     "id": "2026-08-20#31"
+    },
+    {
+     "kind": "msg",
+     "label": "Message",
+     "from": "Michael",
+     "to": "Jim",
+     "fromB": "hq",
+     "toB": "library",
+     "srcType": "agent_msg",
+     "srcTs": [
+      "2026-08-21T02:50:14.185000Z",
+      "2026-08-21T02:50:55.746000Z"
+     ],
+     "count": 2,
+     "ts": "2026-08-21T02:50:14.185000Z",
+     "id": "2026-08-20#32"
+    },
+    {
+     "kind": "msg",
+     "label": "Message",
+     "from": "Jim",
+     "to": "Michael",
+     "fromB": "library",
+     "toB": "hq",
+     "srcType": "agent_msg",
+     "srcTs": [
+      "2026-08-21T02:52:13.266000Z"
+     ],
+     "count": 1,
+     "ts": "2026-08-21T02:52:13.266000Z",
+     "id": "2026-08-20#33"
+    },
+    {
+     "kind": "msg",
+     "label": "Message",
+     "from": "Michael",
+     "to": "Jim",
+     "fromB": "hq",
+     "toB": "library",
+     "srcType": "agent_msg",
+     "srcTs": [
+      "2026-08-21T03:02:28.102000Z",
+      "2026-08-21T03:02:49.318000Z",
+      "2026-08-21T03:05:24.656000Z"
+     ],
+     "count": 3,
+     "ts": "2026-08-21T03:02:28.102000Z",
+     "id": "2026-08-20#34"
+    },
+    {
+     "kind": "msg",
+     "label": "Message",
+     "from": "Jim",
+     "to": "Michael",
+     "fromB": "library",
+     "toB": "hq",
+     "srcType": "agent_msg",
+     "srcTs": [
+      "2026-08-21T03:02:35.087000Z",
+      "2026-08-21T03:04:26.532000Z",
+      "2026-08-21T03:06:20.594000Z"
+     ],
+     "count": 3,
+     "ts": "2026-08-21T03:02:35.087000Z",
+     "id": "2026-08-20#35"
+    },
+    {
+     "kind": "boyd",
+     "label": "Message from Boyd",
+     "from": "Boyd",
+     "to": "Michael",
+     "fromB": "boyd",
+     "toB": "hq",
+     "srcType": "boyd_msg",
+     "srcTs": [
+      "2026-08-21T03:02:35.112000Z"
+     ],
+     "count": 1,
+     "ts": "2026-08-21T03:02:35.112000Z",
+     "id": "2026-08-20#36"
+    }
+   ],
+   "counts": {
+    "boyd": 10,
+    "msg": 27
+   },
+   "cast": [
+    "Jim",
+    "Michael",
+    "Oscar",
+    "Pam"
+   ],
+   "topPair": "Michael ↔ Oscar",
+   "firstTs": "2026-08-20T23:59:41.867000Z",
+   "lastTs": "2026-08-21T03:02:35.112000Z"
+  },
+  {
+   "day": "2026-09-09",
+   "title": "Wednesday, Sep 9",
+   "short": "Wed Sep 9",
+   "jobs": [
+    {
+     "kind": "routine",
+     "label": "Morning Boyd Family Times",
+     "from": "Boyd Family Times (archive)",
+     "to": null,
+     "fromB": "press",
+     "toB": null,
+     "srcType": "routine_run",
+     "srcTs": [
+      "2026-09-09T09:03:31.475000Z"
+     ],
+     "count": 1,
+     "ts": "2026-09-09T09:03:31.475000Z",
+     "status": "ok",
+     "id": "2026-09-09#0"
+    },
+    {
+     "kind": "routine",
+     "label": "transcript-healthcheck",
+     "from": "Dr. EggBot",
+     "to": null,
+     "fromB": "hatchery",
+     "toB": null,
+     "srcType": "routine_run",
+     "srcTs": [
+      "2026-09-09T10:39:35Z"
+     ],
+     "count": 1,
+     "ts": "2026-09-09T10:39:35Z",
+     "status": "ok",
+     "id": "2026-09-09#1"
+    },
+    {
+     "kind": "routine",
+     "label": "Weekday family calendar scan",
+     "from": "Pam",
+     "to": null,
+     "fromB": "clubhouse",
+     "toB": null,
+     "srcType": "routine_run",
+     "srcTs": [
+      "2026-09-09T11:36:36.088000Z"
+     ],
+     "count": 1,
+     "ts": "2026-09-09T11:36:36.088000Z",
+     "status": "ok",
+     "id": "2026-09-09#2"
+    },
+    {
+     "kind": "msg",
+     "label": "Message",
+     "from": "Pam",
+     "to": "Michael",
+     "fromB": "clubhouse",
+     "toB": "hq",
+     "srcType": "agent_msg",
+     "srcTs": [
+      "2026-09-09T11:39:43.403000Z"
+     ],
+     "count": 1,
+     "ts": "2026-09-09T11:39:43.403000Z",
+     "id": "2026-09-09#3"
+    },
+    {
+     "kind": "routine",
+     "label": "Morning attention brief",
+     "from": "Brief",
+     "to": null,
+     "fromB": "postoffice",
+     "toB": null,
+     "srcType": "routine_run",
+     "srcTs": [
+      "2026-09-09T12:07:06.535000Z"
+     ],
+     "count": 1,
+     "ts": "2026-09-09T12:07:06.535000Z",
+     "status": "ok",
+     "id": "2026-09-09#4"
+    },
+    {
+     "kind": "boyd",
+     "label": "Message from Boyd",
+     "from": "Boyd",
+     "to": "Jim",
+     "fromB": "boyd",
+     "toB": "library",
+     "srcType": "boyd_msg",
+     "srcTs": [
+      "2026-09-09T15:09:12.055000Z"
+     ],
+     "count": 1,
+     "ts": "2026-09-09T15:09:12.055000Z",
+     "id": "2026-09-09#5"
+    },
+    {
+     "kind": "boyd",
+     "label": "Message from Boyd",
+     "from": "Boyd",
+     "to": "Dr. EggBot",
+     "fromB": "boyd",
+     "toB": "hatchery",
+     "srcType": "boyd_msg",
+     "srcTs": [
+      "2026-09-09T15:12:34.136000Z",
+      "2026-09-09T15:16:44.800000Z"
+     ],
+     "count": 2,
+     "ts": "2026-09-09T15:12:34.136000Z",
+     "id": "2026-09-09#6"
+    },
+    {
+     "kind": "msg",
+     "label": "Message",
+     "from": "Ryan",
+     "to": "Jim",
+     "fromB": "lighthouse",
+     "toB": "library",
+     "srcType": "agent_msg",
+     "srcTs": [
+      "2026-09-09T15:16:23.903000Z",
+      "2026-09-09T15:17:28.581000Z",
+      "2026-09-09T15:18:01.856000Z",
+      "2026-09-09T15:20:43.999000Z"
+     ],
+     "count": 4,
+     "ts": "2026-09-09T15:16:23.903000Z",
+     "id": "2026-09-09#7"
+    },
+    {
+     "kind": "msg",
+     "label": "Message",
+     "from": "Jim",
+     "to": "Ryan",
+     "fromB": "library",
+     "toB": "lighthouse",
+     "srcType": "agent_msg",
+     "srcTs": [
+      "2026-09-09T15:17:15.076000Z",
+      "2026-09-09T15:19:23.203000Z",
+      "2026-09-09T15:21:04.145000Z"
+     ],
+     "count": 3,
+     "ts": "2026-09-09T15:17:15.076000Z",
+     "id": "2026-09-09#8"
+    },
+    {
+     "kind": "msg",
+     "label": "Message",
+     "from": "Dr. EggBot",
+     "to": "Ryan",
+     "fromB": "hatchery",
+     "toB": "lighthouse",
+     "srcType": "agent_msg",
+     "srcTs": [
+      "2026-09-09T15:17:49.868000Z"
+     ],
+     "count": 1,
+     "ts": "2026-09-09T15:17:49.868000Z",
+     "id": "2026-09-09#9"
+    },
+    {
+     "kind": "msg",
+     "label": "Message",
+     "from": "Ryan",
+     "to": "Dr. EggBot",
+     "fromB": "lighthouse",
+     "toB": "hatchery",
+     "srcType": "agent_msg",
+     "srcTs": [
+      "2026-09-09T15:19:20.643000Z"
+     ],
+     "count": 1,
+     "ts": "2026-09-09T15:19:20.643000Z",
+     "id": "2026-09-09#10"
+    },
+    {
+     "kind": "boyd",
+     "label": "Message from Boyd",
+     "from": "Boyd",
+     "to": "Ryan",
+     "fromB": "boyd",
+     "toB": "lighthouse",
+     "srcType": "boyd_msg",
+     "srcTs": [
+      "2026-09-09T15:19:31.540000Z"
+     ],
+     "count": 1,
+     "ts": "2026-09-09T15:19:31.540000Z",
+     "id": "2026-09-09#11"
+    },
+    {
+     "kind": "boyd",
+     "label": "Message from Boyd",
+     "from": "Boyd",
+     "to": "Jim",
+     "fromB": "boyd",
+     "toB": "library",
+     "srcType": "boyd_msg",
+     "srcTs": [
+      "2026-09-09T21:19:47.835000Z",
+      "2026-09-09T21:23:32.974000Z"
+     ],
+     "count": 2,
+     "ts": "2026-09-09T21:19:47.835000Z",
+     "id": "2026-09-09#12"
+    },
+    {
+     "kind": "routine",
+     "label": "Char weeknight homework check-in",
+     "from": "Char Tutor",
+     "to": null,
+     "fromB": "school",
+     "toB": null,
+     "srcType": "routine_run",
+     "srcTs": [
+      "2026-09-09T23:02:51.689000Z"
+     ],
+     "count": 1,
+     "ts": "2026-09-09T23:02:51.689000Z",
+     "status": "ok",
+     "id": "2026-09-09#13"
+    },
+    {
+     "kind": "routine",
+     "label": "Vic weeknight homework check-in",
+     "from": "Vic Tutor",
+     "to": null,
+     "fromB": "school",
+     "toB": null,
+     "srcType": "routine_run",
+     "srcTs": [
+      "2026-09-09T23:20:36.962000Z"
+     ],
+     "count": 1,
+     "ts": "2026-09-09T23:20:36.962000Z",
+     "status": "ok",
+     "id": "2026-09-09#14"
+    },
+    {
+     "kind": "routine",
+     "label": "Jim daily interest note",
+     "from": "Jim",
+     "to": null,
+     "fromB": "library",
+     "toB": null,
+     "srcType": "routine_run",
+     "srcTs": [
+      "2026-09-10T00:23:23.500000Z"
+     ],
+     "count": 1,
+     "ts": "2026-09-10T00:23:23.500000Z",
+     "status": "ok",
+     "id": "2026-09-09#15"
+    },
+    {
+     "kind": "boyd",
+     "label": "Message from Boyd",
+     "from": "Boyd",
+     "to": "Michael",
+     "fromB": "boyd",
+     "toB": "hq",
+     "srcType": "boyd_msg",
+     "srcTs": [
+      "2026-09-10T00:25:12.868000Z",
+      "2026-09-10T00:25:28.252000Z",
+      "2026-09-10T00:29:06.133000Z",
+      "2026-09-10T00:30:14.699000Z"
+     ],
+     "count": 4,
+     "ts": "2026-09-10T00:25:12.868000Z",
+     "id": "2026-09-09#16"
+    },
+    {
+     "kind": "msg",
+     "label": "Message",
+     "from": "Michael",
+     "to": "Char Tutor",
+     "fromB": "hq",
+     "toB": "school",
+     "srcType": "agent_msg",
+     "srcTs": [
+      "2026-09-10T00:28:12.894000Z"
+     ],
+     "count": 1,
+     "ts": "2026-09-10T00:28:12.894000Z",
+     "id": "2026-09-09#17"
+    },
+    {
+     "kind": "msg",
+     "label": "Message",
+     "from": "Michael",
+     "to": "Vic Tutor",
+     "fromB": "hq",
+     "toB": "school",
+     "srcType": "agent_msg",
+     "srcTs": [
+      "2026-09-10T00:28:14.038000Z"
+     ],
+     "count": 1,
+     "ts": "2026-09-10T00:28:14.038000Z",
+     "id": "2026-09-09#18"
+    },
+    {
+     "kind": "msg",
+     "label": "Message",
+     "from": "Vic Tutor",
+     "to": "Michael",
+     "fromB": "school",
+     "toB": "hq",
+     "srcType": "agent_msg",
+     "srcTs": [
+      "2026-09-10T00:31:40.862000Z",
+      "2026-09-10T00:33:18.714000Z"
+     ],
+     "count": 2,
+     "ts": "2026-09-10T00:31:40.862000Z",
+     "id": "2026-09-09#19"
+    },
+    {
+     "kind": "msg",
+     "label": "Message",
+     "from": "Michael",
+     "to": "Vic Tutor",
+     "fromB": "hq",
+     "toB": "school",
+     "srcType": "agent_msg",
+     "srcTs": [
+      "2026-09-10T00:31:50.742000Z",
+      "2026-09-10T00:32:47.591000Z",
+      "2026-09-10T00:33:32.173000Z"
+     ],
+     "count": 3,
+     "ts": "2026-09-10T00:31:50.742000Z",
+     "id": "2026-09-09#20"
+    },
+    {
+     "kind": "msg",
+     "label": "Message",
+     "from": "Michael",
+     "to": "Char Tutor",
+     "fromB": "hq",
+     "toB": "school",
+     "srcType": "agent_msg",
+     "srcTs": [
+      "2026-09-10T00:32:48.419000Z",
+      "2026-09-10T00:33:33.437000Z"
+     ],
+     "count": 2,
+     "ts": "2026-09-10T00:32:48.419000Z",
+     "id": "2026-09-09#21"
+    },
+    {
+     "kind": "msg",
+     "label": "Message",
+     "from": "Char Tutor",
+     "to": "Michael",
+     "fromB": "school",
+     "toB": "hq",
+     "srcType": "agent_msg",
+     "srcTs": [
+      "2026-09-10T00:36:30.094000Z"
+     ],
+     "count": 1,
+     "ts": "2026-09-10T00:36:30.094000Z",
+     "id": "2026-09-09#22"
+    },
+    {
+     "kind": "msg",
+     "label": "Message",
+     "from": "Michael",
+     "to": "Char Tutor",
+     "fromB": "hq",
+     "toB": "school",
+     "srcType": "agent_msg",
+     "srcTs": [
+      "2026-09-10T00:36:41.704000Z"
+     ],
+     "count": 1,
+     "ts": "2026-09-10T00:36:41.704000Z",
+     "id": "2026-09-09#23"
+    },
+    {
+     "kind": "msg",
+     "label": "Message",
+     "from": "Vic Tutor",
+     "to": "Michael",
+     "fromB": "school",
+     "toB": "hq",
+     "srcType": "agent_msg",
+     "srcTs": [
+      "2026-09-10T00:39:02.932000Z"
+     ],
+     "count": 1,
+     "ts": "2026-09-10T00:39:02.932000Z",
+     "id": "2026-09-09#24"
+    },
+    {
+     "kind": "msg",
+     "label": "Message",
+     "from": "Michael",
+     "to": "Vic Tutor",
+     "fromB": "hq",
+     "toB": "school",
+     "srcType": "agent_msg",
+     "srcTs": [
+      "2026-09-10T00:39:12.472000Z"
+     ],
+     "count": 1,
+     "ts": "2026-09-10T00:39:12.472000Z",
+     "id": "2026-09-09#25"
+    },
+    {
+     "kind": "msg",
+     "label": "Message",
+     "from": "Char Tutor",
+     "to": "Michael",
+     "fromB": "school",
+     "toB": "hq",
+     "srcType": "agent_msg",
+     "srcTs": [
+      "2026-09-10T00:42:06.920000Z"
+     ],
+     "count": 1,
+     "ts": "2026-09-10T00:42:06.920000Z",
+     "id": "2026-09-09#26"
+    },
+    {
+     "kind": "msg",
+     "label": "Message",
+     "from": "Michael",
+     "to": "Char Tutor",
+     "fromB": "hq",
+     "toB": "school",
+     "srcType": "agent_msg",
+     "srcTs": [
+      "2026-09-10T00:42:30.617000Z"
+     ],
+     "count": 1,
+     "ts": "2026-09-10T00:42:30.617000Z",
+     "id": "2026-09-09#27"
+    },
+    {
+     "kind": "boyd",
+     "label": "Message from Boyd",
+     "from": "Boyd",
+     "to": "Michael",
+     "fromB": "boyd",
+     "toB": "hq",
+     "srcType": "boyd_msg",
+     "srcTs": [
+      "2026-09-10T01:34:42.816000Z"
+     ],
+     "count": 1,
+     "ts": "2026-09-10T01:34:42.816000Z",
+     "id": "2026-09-09#28"
+    },
+    {
+     "kind": "msg",
+     "label": "Message",
+     "from": "Michael",
+     "to": "Char Tutor",
+     "fromB": "hq",
+     "toB": "school",
+     "srcType": "agent_msg",
+     "srcTs": [
+      "2026-09-10T01:35:32.671000Z"
+     ],
+     "count": 1,
+     "ts": "2026-09-10T01:35:32.671000Z",
+     "id": "2026-09-09#29"
+    },
+    {
+     "kind": "msg",
+     "label": "Message",
+     "from": "Michael",
+     "to": "Vic Tutor",
+     "fromB": "hq",
+     "toB": "school",
+     "srcType": "agent_msg",
+     "srcTs": [
+      "2026-09-10T01:35:34.856000Z"
+     ],
+     "count": 1,
+     "ts": "2026-09-10T01:35:34.856000Z",
+     "id": "2026-09-09#30"
+    },
+    {
+     "kind": "msg",
+     "label": "Message",
+     "from": "Vic Tutor",
+     "to": "Michael",
+     "fromB": "school",
+     "toB": "hq",
+     "srcType": "agent_msg",
+     "srcTs": [
+      "2026-09-10T01:35:55.276000Z"
+     ],
+     "count": 1,
+     "ts": "2026-09-10T01:35:55.276000Z",
+     "id": "2026-09-09#31"
+    },
+    {
+     "kind": "msg",
+     "label": "Message",
+     "from": "Char Tutor",
+     "to": "Michael",
+     "fromB": "school",
+     "toB": "hq",
+     "srcType": "agent_msg",
+     "srcTs": [
+      "2026-09-10T01:35:55.448000Z"
+     ],
+     "count": 1,
+     "ts": "2026-09-10T01:35:55.448000Z",
+     "id": "2026-09-09#32"
+    },
+    {
+     "kind": "boyd",
+     "label": "Message from Boyd",
+     "from": "Boyd",
+     "to": "Michael",
+     "fromB": "boyd",
+     "toB": "hq",
+     "srcType": "boyd_msg",
+     "srcTs": [
+      "2026-09-10T01:48:02.877000Z"
+     ],
+     "count": 1,
+     "ts": "2026-09-10T01:48:02.877000Z",
+     "id": "2026-09-09#33"
+    },
+    {
+     "kind": "msg",
+     "label": "Message",
+     "from": "Michael",
+     "to": "Char Tutor",
+     "fromB": "hq",
+     "toB": "school",
+     "srcType": "agent_msg",
+     "srcTs": [
+      "2026-09-10T01:48:13.455000Z"
+     ],
+     "count": 1,
+     "ts": "2026-09-10T01:48:13.455000Z",
+     "id": "2026-09-09#34"
+    },
+    {
+     "kind": "msg",
+     "label": "Message",
+     "from": "Michael",
+     "to": "Vic Tutor",
+     "fromB": "hq",
+     "toB": "school",
+     "srcType": "agent_msg",
+     "srcTs": [
+      "2026-09-10T01:48:14.054000Z"
+     ],
+     "count": 1,
+     "ts": "2026-09-10T01:48:14.054000Z",
+     "id": "2026-09-09#35"
+    },
+    {
+     "kind": "msg",
+     "label": "Message",
+     "from": "Char Tutor",
+     "to": "Michael",
+     "fromB": "school",
+     "toB": "hq",
+     "srcType": "agent_msg",
+     "srcTs": [
+      "2026-09-10T01:48:28.126000Z"
+     ],
+     "count": 1,
+     "ts": "2026-09-10T01:48:28.126000Z",
+     "id": "2026-09-09#36"
+    },
+    {
+     "kind": "msg",
+     "label": "Message",
+     "from": "Vic Tutor",
+     "to": "Michael",
+     "fromB": "school",
+     "toB": "hq",
+     "srcType": "agent_msg",
+     "srcTs": [
+      "2026-09-10T01:48:28.550000Z"
+     ],
+     "count": 1,
+     "ts": "2026-09-10T01:48:28.550000Z",
+     "id": "2026-09-09#37"
+    },
+    {
+     "kind": "boyd",
+     "label": "Message from Boyd",
+     "from": "Boyd",
+     "to": "Boyd Family Times (archive)",
+     "fromB": "boyd",
+     "toB": "press",
+     "srcType": "boyd_msg",
+     "srcTs": [
+      "2026-09-10T01:53:39.162000Z",
+      "2026-09-10T01:54:45.509000Z"
+     ],
+     "count": 2,
+     "ts": "2026-09-10T01:53:39.162000Z",
+     "id": "2026-09-09#38"
+    },
+    {
+     "kind": "boyd",
+     "label": "Message from Boyd",
+     "from": "Boyd",
+     "to": "Oscar",
+     "fromB": "boyd",
+     "toB": "bank",
+     "srcType": "boyd_msg",
+     "srcTs": [
+      "2026-09-10T01:58:40.928000Z"
+     ],
+     "count": 1,
+     "ts": "2026-09-10T01:58:40.928000Z",
+     "id": "2026-09-09#39"
+    }
+   ],
+   "counts": {
+    "routine": 7,
+    "msg": 24,
+    "boyd": 9
+   },
+   "cast": [
+    "Boyd Family Times (archive)",
+    "Brief",
+    "Char Tutor",
+    "Dr. EggBot",
+    "Jim",
+    "Michael",
+    "Oscar",
+    "Pam",
+    "Ryan",
+    "Vic Tutor"
+   ],
+   "topPair": "Char Tutor ↔ Michael",
+   "firstTs": "2026-09-09T09:03:31.475000Z",
+   "lastTs": "2026-09-10T01:58:40.928000Z"
+  }
+ ],
+ "excluded": {
+  "money routine run": 7
+ },
+ "usage": {
+  "used_pct": 51,
+  "reset_date": "2026-10-08",
+  "checked_at": "2026-10-07T18:50-04:00",
+  "label": "Grok Bot weekly included usage"
+ }
+}

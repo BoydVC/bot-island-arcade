@@ -1,0 +1,40 @@
+PASS all 15 requested bots are on the island (from fleet.json)  [16 bots]
+PASS every bot in the level data really exists in fleet.json  [16 bots in levels: Boyd Family Times, Boyd Family Times (archive), Brief, Char Tutor, Dr. EggBot, Dwight, Jim, Kelly, Michael, Oscar, Pam, Path, Pods, Ryan, TokenMax, Vic Tutor]
+PASS every requested bot gets at least one delivery  [[]]
+PASS every delivery is a real logged event at its real timestamp  [177 deliveries, 254 source events, 0 unmatched []]
+PASS level "Wednesday, Oct 7" = every qualifying event that ET day  [4 deliveries from 22 events]
+PASS level "Monday, Sep 14" = every qualifying event that ET day  [20 deliveries from 21 events]
+PASS level "Thursday, Sep 10" = every qualifying event that ET day  [15 deliveries from 20 events]
+PASS level "Friday, Sep 11" = every qualifying event that ET day  [27 deliveries from 37 events]
+PASS level "Tuesday, Sep 15" = every qualifying event that ET day  [34 deliveries from 42 events]
+PASS level "Thursday, Aug 20" = every qualifying event that ET day  [37 deliveries from 57 events]
+PASS level "Wednesday, Sep 9" = every qualifying event that ET day  [40 deliveries from 55 events]
+PASS levels are named after real replay days (days with logged events)  [Wed Oct 7, Mon Sep 14, Thu Sep 10, Fri Sep 11, Tue Sep 15, Thu Aug 20, Wed Sep 9]
+PASS nothing about money (no money routines or labels)  [excluded {'money routine run': 7}]
+PASS no message bodies: deliveries carry only who/where/when + existing labels  [['count', 'exts', 'from', 'fromB', 'id', 'kind', 'label', 'srcTs', 'srcType', 'status', 'to', 'toB', 'ts']]
+PASS labels come from the data (routine names, output labels, file extensions)
+PASS snapshot is offline (no external scripts, styles or images)  [118 KB]
+PASS server :4267 serves the game
+PASS headless drive ran
+PASS title screen: 7 real days to pick  [7]
+PASS JS sees exactly the baked levels
+PASS JS: every bot in the level data exists in the bot list  [16]
+PASS Enter starts the game
+PASS arrow keys move the drone  [-98]
+PASS WASD moves the drone  [89]
+PASS scoring: autopilot (arrow keys) delivers all of Level 1 and scores  [{'screen': 'clear', 'score': 2197, 'delivered': 4, 'misses': 0, 'combo': 4}]
+PASS combo meter builds on back-to-back deliveries  [L1 combo 4, L4 combo 3]
+PASS Enter on the day-complete card goes to the next day
+PASS pause screen freezes the game; P resumes  [{'screen': 'paused', 'frozen': True, 'frozen2': True}]
+PASS mute button state persists (M)  [{'muted': True, 'stored': '1', 'icon': '🔇'}]
+PASS token meter fills from coins and Space fires TOKENMAX MODE  [tokens 100, boost 6.716699999999997]
+PASS game over after 5 missed deliveries  [{'screen': 'over', 'misses': 5, 'title': '📭 Shift over!'}]
+PASS high-score table saved to localStorage (quick-pick 'Vic')  [[{'name': 'Vic', 'score': 100, 'day': 'Wed Sep 9', 'level': 7, 'at': '2026-10-07'}]]
+PASS high scores show on the title screen after reload  [1. VicWed Sep 9 · L7100]
+PASS touch: drag on a phone moves the drone; touch controls shown  [{'dx': -428, 'dy': 286, 'touchUi': True}]
+PASS offline snapshot (file://) plays with no network  [{'screen': 'play', 'delivered': 1, 'score': 250, 'net': 0}]
+PASS no JavaScript errors  [[]]
+PASS screenshots: title, gameplay (00-best), game over, phone  [['00-best-gameplay-sep11.png', '01-title.png', '03-game-over.png', '04-phone.png', '05-pause.png']]
+
+37/37 checks passed
+EXIT 0

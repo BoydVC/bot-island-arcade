@@ -1,0 +1,73 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no,viewport-fit=cover">
+<title>Bot Island Arcade</title>
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22%3E%3Ctext y=%22.9em%22 font-size=%2290%22%3E%F0%9F%9B%B8%3C/text%3E%3C/svg%3E">
+<style>/*__CSS__*/</style></head>
+<body>
+<div id="wrap">
+  <canvas id="game"></canvas>
+  <div id="hud" hidden>
+    <div class="hrow">
+      <div class="pill lvl"><b id="hLevel">Level 1</b><span id="hClock">—</span></div>
+      <div class="pill score"><span>SCORE</span><b id="hScore">0</b></div>
+      <div class="pill meter"><span>COMBO <b id="hMult">×1</b></span><div class="bar"><i id="hCombo"></i></div></div>
+      <div class="pill meter tok"><span>TOKEN METER <b id="hTokPct">0%</b></span><div class="bar"><i id="hTok"></i></div></div>
+      <div class="pill lives" title="Missed deliveries left"><span id="hLives">📬📬📬📬📬</span></div>
+      <button id="bMute" class="ib" title="Mute (M)">🔊</button>
+      <button id="bPause" class="ib" title="Pause (P / Esc)">⏸</button>
+    </div>
+    <div id="jobs"></div>
+    <div id="toast"></div>
+  </div>
+  <div id="touch" hidden><div id="stick"><i></i></div><button id="bBoost">⚡<small>BOOST</small></button></div>
+
+  <section id="title" class="screen">
+    <div class="card big">
+      <h1><span class="drone">🛸</span> Bot Island Arcade</h1>
+      <p class="sub">You're the island's courier drone. Fly real messages between Boyd's Grok Bots, on real days, at the real times they happened.</p>
+      <div class="cols">
+        <div>
+          <h3>Pick a day</h3>
+          <ol id="levelList"></ol>
+          <button id="bStart" class="go">▶ Start (Enter)</button>
+        </div>
+        <div>
+          <h3>🏆 High scores</h3>
+          <table id="scoresTitle" class="scores"></table>
+          <h3>How to play</h3>
+          <ul class="how">
+            <li><b>Move:</b> arrow keys or WASD (phones: drag anywhere)</li>
+            <li><b>✉️ Messages:</b> fly to the sender, grab the envelope, drop it at the recipient</li>
+            <li><b>⏰ Routines / 📦 outputs:</b> just fly to that bot's building</li>
+            <li><b>🪙 Tokens</b> fill the Token Meter. Full? <b>Space</b> or ⚡ for TOKENMAX MODE (fast + 2× points)</li>
+            <li>Every 45 s the <b>weekly reset</b> wipes unspent tokens. Use 'em or lose 'em!</li>
+            <li>Dodge 🐛 bugs. <b>P</b> pause, <b>M</b> mute. 5 missed deliveries ends your shift.</li>
+          </ul>
+        </div>
+      </div>
+      <p class="fine" id="factLine"></p>
+    </div>
+  </section>
+
+  <section id="paused" class="screen" hidden>
+    <div class="card"><h2>⏸ Paused</h2><p id="pauseInfo"></p>
+      <button id="bResume" class="go">▶ Resume (P)</button> <button id="bMute2">🔊 Sound on</button> <button id="bQuit">🏝️ Quit to title</button></div>
+  </section>
+
+  <section id="clear" class="screen" hidden>
+    <div class="card"><h2 id="clearTitle">Day complete!</h2><div id="clearStats"></div><button id="bNext" class="go">Next day ▶ (Enter)</button></div>
+  </section>
+
+  <section id="over" class="screen" hidden>
+    <div class="card"><h2 id="overTitle">Shift over!</h2><div id="overStats"></div>
+      <div id="nameEntry"><p>Who's on the scoreboard?</p>
+        <div class="who"><button data-n="Boyd">Boyd</button><button data-n="Char">Char</button><button data-n="Vic">Vic</button>
+        <input id="nameIn" maxlength="12" placeholder="or type a name"><button id="bSave" class="go">Save</button></div></div>
+      <table id="scoresOver" class="scores"></table>
+      <button id="bAgain" class="go">↻ Play again (Enter)</button> <button id="bTitle">🏝️ Title</button></div>
+  </section>
+</div>
+<!--__DATA__-->
+<!--__JS__-->
+</body></html>
