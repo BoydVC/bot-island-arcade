@@ -21,7 +21,7 @@ data = json.loads(re.search(r"window\.ARCADE_DATA = (\{.*?\});</script>", snap, 
 MONEY = re.compile(r"bill|financ|cash|money|statement|budget|pay|bank|invest|\$", re.I)
 
 # --- 1. data honesty ---
-WANT = ["Michael", "Pam", "Oscar", "Jim", "Kelly", "Ryan", "Dwight", "Brief", "Pods", "Path", "Vic Tutor", "Char Tutor", "Boyd Family Times", "Dr. EggBot", "TokenMax"]
+WANT = ["Michael", "Pam", "Oscar", "Jim", "Kelly", "Ryan", "Dwight", "Brief", "Pods", "Path", "Sam Tutor", "Alex Tutor", "Boyd Family Times", "Dr. EggBot", "TokenMax"]
 check("all 15 requested bots are on the island (from fleet.json)", all(n in real and n in {b["name"] for b in data["bots"]} for n in WANT), f'{len(data["bots"])} bots')
 jobs = [j for L in data["levels"] for j in L["jobs"]]
 inlv = {n for j in jobs for n in (j["from"], j.get("to")) if n and n != "Boyd"}
@@ -87,8 +87,8 @@ if "--no-browser" not in sys.argv:
     go = S.get("gameOver", {})
     check("game over after 5 missed deliveries", go.get("screen") == "over" and go.get("misses") == 5, go)
     sv = S.get("saved") or []
-    check("high-score table saved to localStorage (quick-pick 'Vic')", any(r.get("name") == "Vic" and r.get("score", 0) > 0 for r in sv), sv[:2])
-    check("high scores show on the title screen after reload", "Vic" in (S.get("titleScores") or ""), (S.get("titleScores") or "")[:80])
+    check("high-score table saved to localStorage (quick-pick 'Sam')", any(r.get("name") == "Sam" and r.get("score", 0) > 0 for r in sv), sv[:2])
+    check("high scores show on the title screen after reload", "Sam" in (S.get("titleScores") or ""), (S.get("titleScores") or "")[:80])
     t = S.get("touch", {})
     check("touch: drag on a phone moves the drone; touch controls shown", t.get("touchUi") and t.get("dx", 0) < -20 and t.get("dy", 0) > 10, t)
     sn = O.get("snapshot", {})

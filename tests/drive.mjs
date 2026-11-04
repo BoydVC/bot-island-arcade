@@ -68,8 +68,8 @@ try {
   await autopilot((s) => s.delivered >= 1, 40000);
   const t0 = Date.now(); let s = await st(); while (s.screen === "play" && Date.now() - t0 < 150000) { await sleep(1000); s = await st(); }
   R.steps.gameOver = { screen: s.screen, misses: s.misses, title: await c.ev("document.getElementById('overTitle').textContent") };
-  // save a high score as "Vic" with the quick-pick button, then it must persist across a reload
-  await c.ev("document.querySelector('.who button[data-n=Vic]').click()"); await sleep(300);
+  // save a high score as "Sam" with the quick-pick button, then it must persist across a reload
+  await c.ev("document.querySelector('.who button[data-n=Sam]').click()"); await sleep(300);
   if (SHOTS) await c.shot(SD + "03-game-over.png");
   R.steps.saved = await c.ev("JSON.parse(localStorage.getItem('botIslandArcade.scores.v1') || '[]')");
   await c.goto(url, 1000); R.steps.titleScores = await c.ev("document.querySelector('#scoresTitle').textContent");
