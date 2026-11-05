@@ -1,7 +1,7 @@
 # 🛸 Bot Island Arcade
 
 A kid-friendly arcade game set on [Bot Island](../bot-island/README.md). **You're the island's courier drone.** You fly real
-messages between Boyd's Grok Bots on **real days, at the times they actually happened**. It's made for Boyd, Char and Vic to play.
+messages between Boyd's Grok Bots on **real days, at the times they actually happened**. It's made for Boyd, Alex and Sam to play.
 
 * **Play:** http://127.0.0.1:4267/ (start it with `nohup ./run.sh &`)
 * **Offline:** `dist/bot-island-arcade.html` is a single 118 KB file with no network calls. Double-click it on any computer or phone.
@@ -23,7 +23,7 @@ messages between Boyd's Grok Bots on **real days, at the times they actually hap
 * **🪙 Token Meter (the joke):** collect TK coins to fill it, then press **Space**, **Shift** or **⚡** for **TOKENMAX MODE**: 1.6× speed, 2× points, and bugs get squashed. But every 45 seconds there's a **🔄 weekly reset**, and any unspent tokens vanish. Use 'em or lose 'em. That's TokenMax's real job.
 * **P / Esc** pauses (⏸ button), **M** mutes (🔊 button, remembered). **Enter** starts and continues.
 * **5 missed deliveries** end your shift. Clear a day with no misses for a +500 bonus. There are 7 days in all.
-* **High scores:** the top 10 are kept in `localStorage` on each device. There are quick-pick buttons for **Boyd**, **Char** and **Vic**, or you can type a name.
+* **High scores:** the top 10 are kept in `localStorage` on each device. There are quick-pick buttons for **Boyd**, **Alex** and **Sam**, or you can type a name.
 
 ## The levels are real days
 Each level is one Eastern-time day from Bot Island's replay data. The easiest is first:
@@ -38,7 +38,7 @@ Each level is one Eastern-time day from Bot Island's replay data. The easiest is
 | 6 | Thu Aug 20 | 37 | First logged day: 27 messages among Michael, Pam, Jim and Oscar |
 | 7 | Wed Sep 9 | 40 | Busiest message day: Ryan, Brief, the tutors, Dr. EggBot… |
 
-All 16 bots on the island get deliveries: Michael, Pam, Oscar, Jim, Kelly, Ryan, Dwight, Brief, Pods, Path, Vic Tutor, Char Tutor, Boyd Family Times (plus its archive), Dr. EggBot and TokenMax.
+All 16 bots on the island get deliveries: Michael, Pam, Oscar, Jim, Kelly, Ryan, Dwight, Brief, Pods, Path, Sam Tutor, Alex Tutor, Boyd Family Times (plus its archive), Dr. EggBot and TokenMax.
 
 ## Data: read-only, nothing invented
 `build.py` opens these files read-only and bakes them into the page. Nothing in `../bot-island` or `../bot-island-3d` is changed.
