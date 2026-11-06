@@ -21,10 +21,10 @@ data = json.loads(re.search(r"window\.ARCADE_DATA = (\{.*?\});</script>", snap, 
 MONEY = re.compile(r"bill|financ|cash|money|statement|budget|pay|bank|invest|\$", re.I)
 
 # --- 1. data honesty ---
-WANT = ["Michael", "Pam", "Oscar", "Jim", "Kelly", "Ryan", "Dwight", "Brief", "Pods", "Path", "Sam Tutor", "Alex Tutor", "Boyd Family Times", "Dr. EggBot", "TokenMax"]
+WANT = ["Michael", "Pam", "Oscar", "Jim", "Kelly", "Ryan", "Dwight", "Brief", "Pods", "Path", "Sam Tutor", "Alex Tutor", "Lakeside Family Times", "Dr. EggBot", "TokenMax"]
 check("all 15 requested bots are on the island (from fleet.json)", all(n in real and n in {b["name"] for b in data["bots"]} for n in WANT), f'{len(data["bots"])} bots')
 jobs = [j for L in data["levels"] for j in L["jobs"]]
-inlv = {n for j in jobs for n in (j["from"], j.get("to")) if n and n != "Boyd"}
+inlv = {n for j in jobs for n in (j["from"], j.get("to")) if n and n != "Alex"}
 check("every bot in the level data really exists in fleet.json", inlv <= real and {b["name"] for b in data["bots"]} <= real, f"{len(inlv)} bots in levels: " + ", ".join(sorted(inlv)))
 check("every requested bot gets at least one delivery", set(WANT) <= inlv, sorted(set(WANT) - inlv))
 by_ts = collections.defaultdict(list)
@@ -34,7 +34,7 @@ bad = []
 for j in jobs:
     for ts in j["srcTs"]:
         if j["kind"] == "msg": ok = any(e["type"] == "agent_msg" and name.get(e.get("from")) == j["from"] and name.get(e["bot"]) == j["to"] for e in by_ts[ts])
-        elif j["kind"] == "boyd": ok = j["from"] == "Boyd" and any(e["type"] == "boyd_msg" and name.get(e["bot"]) == j["to"] for e in by_ts[ts])
+        elif j["kind"] == "boyd": ok = j["from"] == "Alex" and any(e["type"] == "boyd_msg" and name.get(e["bot"]) == j["to"] for e in by_ts[ts])
         elif j["kind"] == "output": ok = any(e["type"] in ("dated_output", "file_write") and name.get(e["bot"]) == j["from"] for e in by_ts[ts])
         elif j["kind"] == "routine": ok = (j["from"], j["label"], ts) in runs
         else: ok = False
@@ -56,7 +56,7 @@ check("levels are named after real replay days (days with logged events)", all(a
 check("nothing about money (no money routines or labels)", not any(MONEY.search(j["label"]) for j in jobs) and data["excluded"].get("money routine run", 0) > 0, f'excluded {data["excluded"]}')
 ALLOWED = {"kind", "label", "from", "to", "fromB", "toB", "srcType", "srcTs", "count", "ts", "id", "exts", "status"}
 check("no message bodies: deliveries carry only who/where/when + existing labels", all(set(j) <= ALLOWED for j in jobs) and not any(k in json.dumps(src["events"][:50]) for k in ('"text"', '"body"', '"subject"')), sorted({k for j in jobs for k in j}))
-check("labels come from the data (routine names, output labels, file extensions)", all(j["label"] in ("Message", "Message from Boyd") or j["kind"] == "routine" or j["label"].startswith("New files: ") or any(e.get("tool") == j["label"] for ts in j["srcTs"] for e in by_ts[ts]) for j in jobs))
+check("labels come from the data (routine names, output labels, file extensions)", all(j["label"] in ("Message", "Message from Alex") or j["kind"] == "routine" or j["label"].startswith("New files: ") or any(e.get("tool") == j["label"] for ts in j["srcTs"] for e in by_ts[ts]) for j in jobs))
 check("snapshot is offline (no external scripts, styles or images)", not re.search(r'<(script|link|img)[^>]+(src|href)\s*=\s*["\']?https?:', snap) and "cdn." not in snap, f"{len(snap)//1024} KB")
 try:
     page = urllib.request.urlopen("http://127.0.0.1:4267/", timeout=5).read().decode()

@@ -33,7 +33,7 @@ try {
   await c.goto(url, 1500);
   R.title = await c.ev("({screen: ARCADE.state().screen, levels: document.querySelectorAll('#levelList li').length, h1: document.querySelector('h1').textContent, scores: document.querySelector('#scoresTitle').textContent})");
   R.levels = await c.ev("ARCADE.levels()"); R.bots = await c.ev("ARCADE.bots()");
-  R.levelBots = await c.ev("[...new Set(ARCADE.levels().flatMap(L => L.jobs.flatMap(j => [j.from, j.to])).filter(n => n && n !== 'Boyd'))]");
+  R.levelBots = await c.ev("[...new Set(ARCADE.levels().flatMap(L => L.jobs.flatMap(j => [j.from, j.to])).filter(n => n && n !== 'Alex'))]");
   if (SHOTS) await c.shot(SD + "01-title.png");
   // start with Enter
   await tap("Enter"); await sleep(400); R.steps.started = (await st()).screen;

@@ -5,7 +5,7 @@ Sources (never written): ../bot-island/data/fleet.json, ../bot-island/config.jso
 
 Every delivery job is one real event (or a burst of identical real events) from fleet.json:
   agent_msg            -> "Message" envelope: pick up at sender's building, drop at recipient's building
-  boyd_msg             -> "Message from Boyd": pick up at Boyd's Place, drop at the bot's building
+  boyd_msg             -> "Message from Alex": pick up at Alex's Place, drop at the bot's building
   routine run          -> wake-up ping at the bot's building, labelled with the routine's real name
   dated_output         -> collect the output at the bot's building, labelled with its real label
   file_write           -> collect new files at the bot's building, labelled with the real file extensions
@@ -69,7 +69,7 @@ def build_levels(fleet, hide):
                 if fr not in bots: excluded["message from hidden/unknown bot"] += 1; continue
                 merge("msg", (fr, to), e["ts"], timedelta(minutes=3), lambda: {"kind": "msg", "label": "Message", "from": name[fr], "to": name[to], "fromB": bld[fr], "toB": bld[to], "srcType": "agent_msg"})
             elif t == "boyd_msg":
-                merge("boyd", (to,), e["ts"], timedelta(minutes=10), lambda: {"kind": "boyd", "label": "Message from Boyd", "from": "Boyd", "to": name[to], "fromB": "boyd", "toB": bld[to], "srcType": "boyd_msg"})
+                merge("boyd", (to,), e["ts"], timedelta(minutes=10), lambda: {"kind": "boyd", "label": "Message from Alex", "from": "Alex", "to": name[to], "fromB": "boyd", "toB": bld[to], "srcType": "boyd_msg"})
             elif t == "dated_output":
                 merge("output", (to, e.get("tool")), e["ts"], timedelta(minutes=60), lambda: {"kind": "output", "label": e.get("tool") or "Output", "from": name[to], "to": None, "fromB": bld[to], "toB": None, "srcType": "dated_output"})
             elif t == "file_write":
@@ -85,7 +85,7 @@ def build_levels(fleet, hide):
                 c = collections.Counter(j["exts"]); j["label"] = "New files: " + ", ".join(f"{k} ×{v}" if v > 1 else k for k, v in c.most_common())
         cnt = collections.Counter(j["kind"] for j in jobs)
         pairs = collections.Counter(tuple(sorted((j["from"], j["to"]))) for j in jobs if j["kind"] == "msg")
-        cast = sorted({n for j in jobs for n in (j["from"], j["to"]) if n and n != "Boyd"})
+        cast = sorted({n for j in jobs for n in (j["from"], j["to"]) if n and n != "Alex"})
         d0 = datetime.fromisoformat(day)
         levels.append({"day": day, "title": d0.strftime("%A, %b ") + str(d0.day), "short": d0.strftime("%a %b ") + str(d0.day),
                        "jobs": jobs, "counts": dict(cnt), "cast": cast,

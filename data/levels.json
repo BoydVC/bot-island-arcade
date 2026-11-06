@@ -126,7 +126,7 @@
   "boyd": {
    "x": 712.0,
    "y": 352.0,
-   "name": "Boyd's Place",
+   "name": "Alex's Place",
    "emoji": "🏠",
    "decor": true
   }
@@ -144,7 +144,7 @@
   },
   {
    "id": "4b4afba1-ebe0-403c-8502-451e00717b07",
-   "name": "Boyd Family Times (archive)",
+   "name": "Lakeside Family Times (archive)",
    "title": "Morning Newspaper",
    "color": "gray",
    "hex": "#94a3b8",
@@ -194,7 +194,7 @@
   },
   {
    "id": "784bedfc-74d6-45a0-a291-762ff05bb0c6",
-   "name": "Boyd Family Times",
+   "name": "Lakeside Family Times",
    "title": "",
    "color": "gray",
    "hex": "#94a3b8",
@@ -308,7 +308,7 @@
     {
      "kind": "output",
      "label": "New files: .json ×2, .ttf, .jpg, .py, .png",
-     "from": "Boyd Family Times",
+     "from": "Lakeside Family Times",
      "to": null,
      "fromB": "press",
      "toB": null,
@@ -418,7 +418,7 @@
     "output": 4
    },
    "cast": [
-    "Boyd Family Times",
+    "Lakeside Family Times",
     "Path",
     "Pods",
     "TokenMax"
@@ -434,8 +434,8 @@
    "jobs": [
     {
      "kind": "routine",
-     "label": "Morning Boyd Family Times",
-     "from": "Boyd Family Times (archive)",
+     "label": "Morning Lakeside Family Times",
+     "from": "Lakeside Family Times (archive)",
      "to": null,
      "fromB": "press",
      "toB": null,
@@ -451,7 +451,7 @@
     {
      "kind": "output",
      "label": "Family Times edition",
-     "from": "Boyd Family Times",
+     "from": "Lakeside Family Times",
      "to": null,
      "fromB": "press",
      "toB": null,
@@ -606,8 +606,8 @@
     },
     {
      "kind": "boyd",
-     "label": "Message from Boyd",
-     "from": "Boyd",
+     "label": "Message from Alex",
+     "from": "Alex",
      "to": "Dr. EggBot",
      "fromB": "boyd",
      "toB": "hatchery",
@@ -623,7 +623,7 @@
      "kind": "msg",
      "label": "Message",
      "from": "Dr. EggBot",
-     "to": "Boyd Family Times (archive)",
+     "to": "Lakeside Family Times (archive)",
      "fromB": "hatchery",
      "toB": "press",
      "srcType": "agent_msg",
@@ -637,7 +637,7 @@
     {
      "kind": "msg",
      "label": "Message",
-     "from": "Boyd Family Times (archive)",
+     "from": "Lakeside Family Times (archive)",
      "to": "Dr. EggBot",
      "fromB": "press",
      "toB": "hatchery",
@@ -651,8 +651,8 @@
     },
     {
      "kind": "boyd",
-     "label": "Message from Boyd",
-     "from": "Boyd",
+     "label": "Message from Alex",
+     "from": "Alex",
      "to": "Alex Tutor",
      "fromB": "boyd",
      "toB": "school",
@@ -681,8 +681,8 @@
     },
     {
      "kind": "boyd",
-     "label": "Message from Boyd",
-     "from": "Boyd",
+     "label": "Message from Alex",
+     "from": "Alex",
      "to": "Sam Tutor",
      "fromB": "boyd",
      "toB": "school",
@@ -751,8 +751,8 @@
     "boyd": 3
    },
    "cast": [
-    "Boyd Family Times",
-    "Boyd Family Times (archive)",
+    "Lakeside Family Times",
+    "Lakeside Family Times (archive)",
     "Brief",
     "Alex Tutor",
     "Dr. EggBot",
@@ -774,8 +774,8 @@
    "jobs": [
     {
      "kind": "routine",
-     "label": "Morning Boyd Family Times",
-     "from": "Boyd Family Times (archive)",
+     "label": "Morning Lakeside Family Times",
+     "from": "Lakeside Family Times (archive)",
      "to": null,
      "fromB": "press",
      "toB": null,
@@ -869,9 +869,9 @@
     },
     {
      "kind": "boyd",
-     "label": "Message from Boyd",
-     "from": "Boyd",
-     "to": "Boyd Family Times (archive)",
+     "label": "Message from Alex",
+     "from": "Alex",
+     "to": "Lakeside Family Times (archive)",
      "fromB": "boyd",
      "toB": "press",
      "srcType": "boyd_msg",
@@ -888,8 +888,8 @@
     },
     {
      "kind": "boyd",
-     "label": "Message from Boyd",
-     "from": "Boyd",
+     "label": "Message from Alex",
+     "from": "Alex",
      "to": "Oscar",
      "fromB": "boyd",
      "toB": "bank",
@@ -903,8 +903,8 @@
     },
     {
      "kind": "boyd",
-     "label": "Message from Boyd",
-     "from": "Boyd",
+     "label": "Message from Alex",
+     "from": "Alex",
      "to": "Michael",
      "fromB": "boyd",
      "toB": "hq",
@@ -918,9 +918,9 @@
     },
     {
      "kind": "boyd",
-     "label": "Message from Boyd",
-     "from": "Boyd",
-     "to": "Boyd Family Times (archive)",
+     "label": "Message from Alex",
+     "from": "Alex",
+     "to": "Lakeside Family Times (archive)",
      "fromB": "boyd",
      "toB": "press",
      "srcType": "boyd_msg",
@@ -933,8 +933,8 @@
     },
     {
      "kind": "boyd",
-     "label": "Message from Boyd",
-     "from": "Boyd",
+     "label": "Message from Alex",
+     "from": "Alex",
      "to": "Dwight",
      "fromB": "boyd",
      "toB": "workshop",
@@ -1017,7 +1017,7 @@
     "boyd": 5
    },
    "cast": [
-    "Boyd Family Times (archive)",
+    "Lakeside Family Times (archive)",
     "Brief",
     "Alex Tutor",
     "Dr. EggBot",
@@ -1039,8 +1039,8 @@
    "jobs": [
     {
      "kind": "routine",
-     "label": "Morning Boyd Family Times",
-     "from": "Boyd Family Times (archive)",
+     "label": "Morning Lakeside Family Times",
+     "from": "Lakeside Family Times (archive)",
      "to": null,
      "fromB": "press",
      "toB": null,
@@ -1071,9 +1071,9 @@
     },
     {
      "kind": "boyd",
-     "label": "Message from Boyd",
-     "from": "Boyd",
-     "to": "Boyd Family Times (archive)",
+     "label": "Message from Alex",
+     "from": "Alex",
+     "to": "Lakeside Family Times (archive)",
      "fromB": "boyd",
      "toB": "press",
      "srcType": "boyd_msg",
@@ -1133,8 +1133,8 @@
     },
     {
      "kind": "boyd",
-     "label": "Message from Boyd",
-     "from": "Boyd",
+     "label": "Message from Alex",
+     "from": "Alex",
      "to": "Michael",
      "fromB": "boyd",
      "toB": "hq",
@@ -1149,8 +1149,8 @@
     },
     {
      "kind": "boyd",
-     "label": "Message from Boyd",
-     "from": "Boyd",
+     "label": "Message from Alex",
+     "from": "Alex",
      "to": "Jim",
      "fromB": "boyd",
      "toB": "library",
@@ -1320,8 +1320,8 @@
     },
     {
      "kind": "boyd",
-     "label": "Message from Boyd",
-     "from": "Boyd",
+     "label": "Message from Alex",
+     "from": "Alex",
      "to": "Michael",
      "fromB": "boyd",
      "toB": "hq",
@@ -1466,7 +1466,7 @@
     "msg": 16
    },
    "cast": [
-    "Boyd Family Times (archive)",
+    "Lakeside Family Times (archive)",
     "Alex Tutor",
     "Dr. EggBot",
     "Jim",
@@ -1487,8 +1487,8 @@
    "jobs": [
     {
      "kind": "routine",
-     "label": "Morning Boyd Family Times",
-     "from": "Boyd Family Times (archive)",
+     "label": "Morning Lakeside Family Times",
+     "from": "Lakeside Family Times (archive)",
      "to": null,
      "fromB": "press",
      "toB": null,
@@ -1504,7 +1504,7 @@
     {
      "kind": "output",
      "label": "Family Times edition",
-     "from": "Boyd Family Times",
+     "from": "Lakeside Family Times",
      "to": null,
      "fromB": "press",
      "toB": null,
@@ -1534,8 +1534,8 @@
     },
     {
      "kind": "boyd",
-     "label": "Message from Boyd",
-     "from": "Boyd",
+     "label": "Message from Alex",
+     "from": "Alex",
      "to": "Dr. EggBot",
      "fromB": "boyd",
      "toB": "hatchery",
@@ -1594,9 +1594,9 @@
     },
     {
      "kind": "boyd",
-     "label": "Message from Boyd",
-     "from": "Boyd",
-     "to": "Boyd Family Times (archive)",
+     "label": "Message from Alex",
+     "from": "Alex",
+     "to": "Lakeside Family Times (archive)",
      "fromB": "boyd",
      "toB": "press",
      "srcType": "boyd_msg",
@@ -1719,8 +1719,8 @@
     },
     {
      "kind": "boyd",
-     "label": "Message from Boyd",
-     "from": "Boyd",
+     "label": "Message from Alex",
+     "from": "Alex",
      "to": "Oscar",
      "fromB": "boyd",
      "toB": "bank",
@@ -1767,8 +1767,8 @@
     },
     {
      "kind": "boyd",
-     "label": "Message from Boyd",
-     "from": "Boyd",
+     "label": "Message from Alex",
+     "from": "Alex",
      "to": "Sam Tutor",
      "fromB": "boyd",
      "toB": "school",
@@ -1783,8 +1783,8 @@
     },
     {
      "kind": "boyd",
-     "label": "Message from Boyd",
-     "from": "Boyd",
+     "label": "Message from Alex",
+     "from": "Alex",
      "to": "Sam Tutor",
      "fromB": "boyd",
      "toB": "school",
@@ -1798,8 +1798,8 @@
     },
     {
      "kind": "boyd",
-     "label": "Message from Boyd",
-     "from": "Boyd",
+     "label": "Message from Alex",
+     "from": "Alex",
      "to": "Alex Tutor",
      "fromB": "boyd",
      "toB": "school",
@@ -1813,8 +1813,8 @@
     },
     {
      "kind": "boyd",
-     "label": "Message from Boyd",
-     "from": "Boyd",
+     "label": "Message from Alex",
+     "from": "Alex",
      "to": "Michael",
      "fromB": "boyd",
      "toB": "hq",
@@ -2018,8 +2018,8 @@
     "msg": 19
    },
    "cast": [
-    "Boyd Family Times",
-    "Boyd Family Times (archive)",
+    "Lakeside Family Times",
+    "Lakeside Family Times (archive)",
     "Alex Tutor",
     "Dr. EggBot",
     "Jim",
@@ -2039,8 +2039,8 @@
    "jobs": [
     {
      "kind": "boyd",
-     "label": "Message from Boyd",
-     "from": "Boyd",
+     "label": "Message from Alex",
+     "from": "Alex",
      "to": "Michael",
      "fromB": "boyd",
      "toB": "hq",
@@ -2116,8 +2116,8 @@
     },
     {
      "kind": "boyd",
-     "label": "Message from Boyd",
-     "from": "Boyd",
+     "label": "Message from Alex",
+     "from": "Alex",
      "to": "Michael",
      "fromB": "boyd",
      "toB": "hq",
@@ -2177,8 +2177,8 @@
     },
     {
      "kind": "boyd",
-     "label": "Message from Boyd",
-     "from": "Boyd",
+     "label": "Message from Alex",
+     "from": "Alex",
      "to": "Michael",
      "fromB": "boyd",
      "toB": "hq",
@@ -2239,8 +2239,8 @@
     },
     {
      "kind": "boyd",
-     "label": "Message from Boyd",
-     "from": "Boyd",
+     "label": "Message from Alex",
+     "from": "Alex",
      "to": "Michael",
      "fromB": "boyd",
      "toB": "hq",
@@ -2254,8 +2254,8 @@
     },
     {
      "kind": "boyd",
-     "label": "Message from Boyd",
-     "from": "Boyd",
+     "label": "Message from Alex",
+     "from": "Alex",
      "to": "Michael",
      "fromB": "boyd",
      "toB": "hq",
@@ -2301,8 +2301,8 @@
     },
     {
      "kind": "boyd",
-     "label": "Message from Boyd",
-     "from": "Boyd",
+     "label": "Message from Alex",
+     "from": "Alex",
      "to": "Michael",
      "fromB": "boyd",
      "toB": "hq",
@@ -2348,8 +2348,8 @@
     },
     {
      "kind": "boyd",
-     "label": "Message from Boyd",
-     "from": "Boyd",
+     "label": "Message from Alex",
+     "from": "Alex",
      "to": "Michael",
      "fromB": "boyd",
      "toB": "hq",
@@ -2424,8 +2424,8 @@
     },
     {
      "kind": "boyd",
-     "label": "Message from Boyd",
-     "from": "Boyd",
+     "label": "Message from Alex",
+     "from": "Alex",
      "to": "Michael",
      "fromB": "boyd",
      "toB": "hq",
@@ -2487,8 +2487,8 @@
     },
     {
      "kind": "boyd",
-     "label": "Message from Boyd",
-     "from": "Boyd",
+     "label": "Message from Alex",
+     "from": "Alex",
      "to": "Michael",
      "fromB": "boyd",
      "toB": "hq",
@@ -2599,8 +2599,8 @@
     },
     {
      "kind": "boyd",
-     "label": "Message from Boyd",
-     "from": "Boyd",
+     "label": "Message from Alex",
+     "from": "Alex",
      "to": "Michael",
      "fromB": "boyd",
      "toB": "hq",
@@ -2634,8 +2634,8 @@
    "jobs": [
     {
      "kind": "routine",
-     "label": "Morning Boyd Family Times",
-     "from": "Boyd Family Times (archive)",
+     "label": "Morning Lakeside Family Times",
+     "from": "Lakeside Family Times (archive)",
      "to": null,
      "fromB": "press",
      "toB": null,
@@ -2713,8 +2713,8 @@
     },
     {
      "kind": "boyd",
-     "label": "Message from Boyd",
-     "from": "Boyd",
+     "label": "Message from Alex",
+     "from": "Alex",
      "to": "Jim",
      "fromB": "boyd",
      "toB": "library",
@@ -2728,8 +2728,8 @@
     },
     {
      "kind": "boyd",
-     "label": "Message from Boyd",
-     "from": "Boyd",
+     "label": "Message from Alex",
+     "from": "Alex",
      "to": "Dr. EggBot",
      "fromB": "boyd",
      "toB": "hatchery",
@@ -2809,8 +2809,8 @@
     },
     {
      "kind": "boyd",
-     "label": "Message from Boyd",
-     "from": "Boyd",
+     "label": "Message from Alex",
+     "from": "Alex",
      "to": "Ryan",
      "fromB": "boyd",
      "toB": "lighthouse",
@@ -2824,8 +2824,8 @@
     },
     {
      "kind": "boyd",
-     "label": "Message from Boyd",
-     "from": "Boyd",
+     "label": "Message from Alex",
+     "from": "Alex",
      "to": "Jim",
      "fromB": "boyd",
      "toB": "library",
@@ -2888,8 +2888,8 @@
     },
     {
      "kind": "boyd",
-     "label": "Message from Boyd",
-     "from": "Boyd",
+     "label": "Message from Alex",
+     "from": "Alex",
      "to": "Michael",
      "fromB": "boyd",
      "toB": "hq",
@@ -3075,8 +3075,8 @@
     },
     {
      "kind": "boyd",
-     "label": "Message from Boyd",
-     "from": "Boyd",
+     "label": "Message from Alex",
+     "from": "Alex",
      "to": "Michael",
      "fromB": "boyd",
      "toB": "hq",
@@ -3150,8 +3150,8 @@
     },
     {
      "kind": "boyd",
-     "label": "Message from Boyd",
-     "from": "Boyd",
+     "label": "Message from Alex",
+     "from": "Alex",
      "to": "Michael",
      "fromB": "boyd",
      "toB": "hq",
@@ -3225,9 +3225,9 @@
     },
     {
      "kind": "boyd",
-     "label": "Message from Boyd",
-     "from": "Boyd",
-     "to": "Boyd Family Times (archive)",
+     "label": "Message from Alex",
+     "from": "Alex",
+     "to": "Lakeside Family Times (archive)",
      "fromB": "boyd",
      "toB": "press",
      "srcType": "boyd_msg",
@@ -3241,8 +3241,8 @@
     },
     {
      "kind": "boyd",
-     "label": "Message from Boyd",
-     "from": "Boyd",
+     "label": "Message from Alex",
+     "from": "Alex",
      "to": "Oscar",
      "fromB": "boyd",
      "toB": "bank",
@@ -3261,7 +3261,7 @@
     "boyd": 9
    },
    "cast": [
-    "Boyd Family Times (archive)",
+    "Lakeside Family Times (archive)",
     "Brief",
     "Alex Tutor",
     "Dr. EggBot",

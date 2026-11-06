@@ -12,8 +12,8 @@ S.bots = DATA.bots.map(b => Object.assign({}, b));
 [...S.bots].sort((a, b) => a.name.localeCompare(b.name)).forEach((b, i, arr) => { const a = -Math.PI / 2 + (i + 0.5) * (2 * Math.PI / arr.length) + 0.12; const p = islePoint(a, 0.8); b.home = {x: p.x, y: p.y, a}; b.phase = i * 1.7; });
 const BYNAME = Object.fromEntries(S.bots.map(b => [b.name, b]));
 function bpos(key) { const b = key === 'boyd' ? BOYD_PLACE : BUILDINGS[key] || BUILDINGS.commons; return {x: b.x, y: b.y + 10}; }
-function bname(key) { return key === 'boyd' ? (BOYD_PLACE.name || "Boyd's Place") : (BUILDINGS[key] || {}).name; }
-function short(n) { return (n || '').replace('Boyd Family Times (archive)', 'Family Times (archive)').replace('Boyd Family Times', 'Family Times'); }
+function bname(key) { return key === 'boyd' ? (BOYD_PLACE.name || "Alex's Place") : (BUILDINGS[key] || {}).name; }
+function short(n) { return (n || '').replace('Lakeside Family Times (archive)', 'Family Times (archive)').replace('Lakeside Family Times', 'Family Times'); }
 
 // ---------- state ----------
 const G = {screen: 'title', level: 0, sel: 0, score: 0, levelScore: 0, combo: 0, comboT: 0, bestCombo: 0, misses: 0, delivered: 0, levelDelivered: 0,
@@ -58,7 +58,7 @@ function renderScores(el, mark = -1) {
 // ---------- levels ----------
 function levelBlurb(L) {
   const c = L.counts, parts = [];
-  if (c.msg) parts.push(`${c.msg} message${c.msg > 1 ? 's' : ''}`); if (c.boyd) parts.push(`${c.boyd} from Boyd`); if (c.routine) parts.push(`${c.routine} routine${c.routine > 1 ? 's' : ''}`); if (c.output) parts.push(`${c.output} output${c.output > 1 ? 's' : ''}`);
+  if (c.msg) parts.push(`${c.msg} message${c.msg > 1 ? 's' : ''}`); if (c.boyd) parts.push(`${c.boyd} from Alex`); if (c.routine) parts.push(`${c.routine} routine${c.routine > 1 ? 's' : ''}`); if (c.output) parts.push(`${c.output} output${c.output > 1 ? 's' : ''}`);
   return parts.join(' · ') + (L.topPair ? ` · busiest pair ${short(L.topPair.split(' ↔ ')[0])} ↔ ${short(L.topPair.split(' ↔ ')[1])}` : '');
 }
 function renderLevelList() {
@@ -230,7 +230,7 @@ function draw(now) {
     for (const j of G.active) {
       const k = j.carry ? j.toB : j.fromB, n = j.carry ? j.to : j.from, b = BYNAME[n]; const p = bpos(k); const s = (slots[k] = (slots[k] || 0) + 1) - 1;
       const x = p.x - 34 + s * 34, y = p.y + 18 + (s % 2) * 20; const tag = `${KIND[j.kind].icon} ${j.carry ? 'to ' : ''}${short(n)}`;
-      if (b) drawBotAt(b, x, y, now, tag, true); else { ctx.font = '22px sans-serif'; ctx.textAlign = 'center'; ctx.fillText('🧑', x, y + 6); ctx.font = '700 11px sans-serif'; const tw = ctx.measureText('💬 Boyd').width + 10; ctx.fillStyle = 'rgba(15,23,42,.82)'; rr(x - tw / 2, y + 12, tw, 15, 7); ctx.fill(); ctx.fillStyle = '#fff'; ctx.fillText('💬 Boyd', x, y + 23.5); }
+      if (b) drawBotAt(b, x, y, now, tag, true); else { ctx.font = '22px sans-serif'; ctx.textAlign = 'center'; ctx.fillText('🧑', x, y + 6); ctx.font = '700 11px sans-serif'; const tw = ctx.measureText('💬 Alex').width + 10; ctx.fillStyle = 'rgba(15,23,42,.82)'; rr(x - tw / 2, y + 12, tw, 15, 7); ctx.fill(); ctx.fillStyle = '#fff'; ctx.fillText('💬 Alex', x, y + 23.5); }
     }
     for (const c of G.coins) { const s = Math.abs(Math.cos(now / 300 + c.ph)); ctx.fillStyle = '#facc15'; ctx.strokeStyle = '#a16207'; ctx.lineWidth = 2; ctx.beginPath(); ctx.ellipse(c.x, c.y + Math.sin(now / 250 + c.ph) * 3, 11 * s + 1, 11, 0, 0, 7); ctx.fill(); ctx.stroke(); if (s > .4) { ctx.fillStyle = '#a16207'; ctx.font = 'bold 9px sans-serif'; ctx.textAlign = 'center'; ctx.fillText('TK', c.x, c.y + 3 + Math.sin(now / 250 + c.ph) * 3); } }
     for (const b of G.bugs) { ctx.save(); ctx.translate(b.x, b.y); ctx.scale(1.5, 1.5); ctx.rotate(Math.atan2(b.vy, b.vx)); ctx.fillStyle = '#65a30d'; for (let i = 0; i < 3; i++) { ctx.beginPath(); ctx.arc(-8 + i * 7, Math.sin(now / 90 + i + b.ph) * 1.5, 5.5, 0, 7); ctx.fill(); } ctx.fillStyle = '#1a2e05'; ctx.beginPath(); ctx.arc(9, 0, 4, 0, 7); ctx.fill(); ctx.fillStyle = '#fff'; ctx.fillRect(9, -2.5, 2, 2); ctx.fillRect(9, 1, 2, 2); ctx.restore(); }
@@ -322,7 +322,7 @@ window.addEventListener('error', (e) => errorsSeen.push(String(e.message)));
 (function boot() {
   const u = DATA.usage; const nBots = DATA.bots.length;
   $('factLine').innerHTML = `${LEVELS.reduce((a, L) => a + L.jobs.length, 0)} deliveries across ${LEVELS.length} real days, starring all ${nBots} bots on Bot Island. Every job is a real logged message, routine run or output from Bot Island's data (who, where and when only: no message contents).` +
-    (u ? ` Real-life token meter: Boyd's Grok Bot weekly usage was ${u.used_pct}% used when this was built (checked ${hm(Date.parse(u.checked_at))} ET). TokenMax's whole job is spending the rest before the reset.` : '');
+    (u ? ` Real-life token meter: Alex's Grok Bot weekly usage was ${u.used_pct}% used when this was built (checked ${hm(Date.parse(u.checked_at))} ET). TokenMax's whole job is spending the rest before the reset.` : '');
   setMute(muted); resize(); show('title'); requestAnimationFrame(frame);
   const q = new URLSearchParams(location.search); if (q.has('level')) startGame(Math.max(0, Math.min(LEVELS.length - 1, (+q.get('level') || 1) - 1)));
 })();
