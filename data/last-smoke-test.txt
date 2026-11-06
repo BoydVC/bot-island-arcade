@@ -1,5 +1,5 @@
 PASS all 15 requested bots are on the island (from fleet.json)  [16 bots]
-PASS every bot in the level data really exists in fleet.json  [16 bots in levels: Boyd Family Times, Boyd Family Times (archive), Brief, Alex Tutor, Dr. EggBot, Dwight, Jim, Kelly, Michael, Oscar, Pam, Path, Pods, Ryan, TokenMax, Sam Tutor]
+PASS every bot in the level data really exists in fleet.json  [16 bots in levels: Lakeside Family Times, Lakeside Family Times (archive), Brief, Alex Tutor, Dr. EggBot, Dwight, Jim, Kelly, Michael, Oscar, Pam, Path, Pods, Ryan, TokenMax, Sam Tutor]
 PASS every requested bot gets at least one delivery  [[]]
 PASS every delivery is a real logged event at its real timestamp  [177 deliveries, 254 source events, 0 unmatched []]
 PASS level "Wednesday, Oct 7" = every qualifying event that ET day  [4 deliveries from 22 events]

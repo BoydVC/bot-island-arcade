@@ -13,7 +13,7 @@ function etParts(ms) {
 }
 function hm(ms) { const p = etParts(ms); const h12 = (p.h % 12) || 12; return `${h12}:${String(p.mi).padStart(2, '0')} ${p.h < 12 ? 'AM' : 'PM'}`; }
 const BUILDINGS = {}; for (const [k, b] of Object.entries(DATA.buildings)) if (k !== 'boyd') BUILDINGS[k] = b;
-const BOYD_PLACE = DATA.buildings.boyd || {x: 712, y: 352, name: "Boyd's Place"};
+const BOYD_PLACE = DATA.buildings.boyd || {x: 712, y: 352, name: "Alex's Place"};
 const PLAZA = {x: 600, y: 420};
 const COLORS = DATA.palette;
 const S = {data: {eggs: DATA.eggs || [], tokenFuel: DATA.usage ? {usedPct: DATA.usage.used_pct} : null}, bots: [], game: null, launchAt: null, t: Date.now()};
